@@ -5,24 +5,18 @@
 # 是否为调试模式
 DEBUG = True
 
+# 尝试次数
 RETRY_COUNT = 3
-
+# 需尝试的状态码
 RETRY_STATUS_CODES = [500, 502, 503, 504, 400, 403, 408]
 
+# 请求最大延迟时间
 TIMEOUT = 10
 
-DEFAULT_HEADERS = {
-    'Accept': 'text/html,application/xhtml+xml,application/xml;'
-              'q=0.9,image/webp,*/*;q=0.8',
-    'Accept-Language': 'zh-CN,zh;q=0.8,en;q=0.6',
-}
-
-PROXY_ENABLED = False
-
-MAX_REQUEST_SIZE = 30
 
 PROXY_FILE = "proxy_list.txt"
-PROXY_INTERVAL = 5
+# 每个代理使用间隔
+PROXY_INTERVAL = 1
 
 # 下载中间件
 DOWNLOADER_MIDDLEWARES = {

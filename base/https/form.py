@@ -1,6 +1,5 @@
 # _*_ coding: utf-8 _*_
 
-""" FormRequest Object """
 from urllib.parse import urlencode
 
 from .request import Request
@@ -8,7 +7,7 @@ from base.utils.python import to_bytes, is_listlike
 
 
 class FormRequest(Request):
-    """ Request """
+    """ Request post"""
 
     def __init__(self, *args, **kwargs):
         formdata = kwargs.pop('data', None)

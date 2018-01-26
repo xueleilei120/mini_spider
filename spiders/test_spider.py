@@ -12,7 +12,6 @@ class TestSpider(Spider):
     """ TestSpider """
     start_urls = [
         "http://blog.jobbole.com/all-posts/",
-        # "http://tool.chinaz.com/Tools/",
     ]
 
     def __init__(self):
@@ -25,9 +24,9 @@ class TestSpider(Spider):
         if next_url:
             logging.info("next page url:%s" % next_url)
             yield Request(next_url, callback=self.parse, dont_filter=True)
-        urls = select.xpath("//a[@class='archive-title']/@href")
+        urls = select.xpath("//a[@class='archive-title']/@href").extract()
         for url in urls:
-            yield Request(url, callback=self.parse_detail)
+            yield Request(url.strip(), callback=self.parse_detail)
 
     def parse_detail(self, response):
         item = None

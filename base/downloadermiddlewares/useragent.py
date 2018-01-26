@@ -1,7 +1,7 @@
 # _*_ coding: utf-8 _*_
 # author : "liuyc"
 # date : 2018/1/17 20:19
-# desc : "用户代理"
+# desc : "随机更换用户代理"
 
 import random
 

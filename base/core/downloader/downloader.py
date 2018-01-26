@@ -1,6 +1,5 @@
 # _*_ coding: utf-8 _*_
-
-""" Downloader """
+# 下载器和中间件执行模块
 import logging
 import asyncio
 import aiohttp
@@ -13,10 +12,8 @@ class DownloadHandler(object):
 
     """ DownloadHandler """
 
-    def __init__(self, spider, keep_alive=True, **kwargs):
-        self.keep_alive = keep_alive
+    def __init__(self, spider, **kwargs):
         self.settings = spider.settings
-        self.session_map = {}
         self.kwargs = kwargs
 
     async def fetch(self, request):
@@ -56,9 +53,8 @@ class Downloader(object):
         self.middleware = DownloaderMiddlewareManager(spider)
 
     async def fetch(self, request):
-        """fetch
-
-        @request, Request, 请求
+        """
+        request, Request, 请求
         """
         # 请求预处理
         request = self.middleware.process_request(request)

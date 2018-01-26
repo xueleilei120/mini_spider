@@ -15,7 +15,6 @@ class Response(object):
         self.request = request
 
     def copy(self, *args, **kwargs):
-        """ copy """
         for key in ["url", "status", "headers", "body", "request"]:
             kwargs.setdefault(key, getattr(self, key))
         cls = kwargs.pop('cls', self.__class__)
