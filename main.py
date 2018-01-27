@@ -2,8 +2,12 @@
 # author : "liuyc"
 # date : 2018/1/12 10:02
 # desc : "程序入口"
-from spiders.test_spider import TestSpider
+from spiders.jobbole_spider import JobboleSpider
+from spiders.cfc_spider import CFCSpider
 
 if __name__ == "__main__":
-    cls_spider = TestSpider()
-    cls_spider.start()
+    jobbole_spider = JobboleSpider()
+    jobbole_spider.start()
+    # cfc_spider = CFCSpider()
+    # cfc_spider.start()
+

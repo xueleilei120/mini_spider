@@ -2,6 +2,7 @@
 
 """ Request Object """
 from w3lib.url import safe_url_string
+from base.utils.python import to_bytes
 
 
 class Request(object):
@@ -16,7 +17,7 @@ class Request(object):
         self.callback = callback
         self.errback = errback
         self.headers = headers or {}
-        self.data = data or {}
+        self._data = data
         self.dont_filter = dont_filter
         self.meta = meta if meta else {}
 
@@ -40,6 +41,17 @@ class Request(object):
             raise ValueError('Missing scheme in request url: %s' % self._url)
 
     url = property(_get_url, _set_url, )
+
+    def _get_data(self):
+        return self._data
+
+    def _set_data(self, data):
+        if data is None:
+            self._data = b''
+        else:
+            self._data = to_bytes(data, self.encoding)
+
+    data = property(_get_data, _set_data)
 
     def __str__(self):
         return "<%s %s>" % (self.method, self.url)

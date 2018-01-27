@@ -22,12 +22,15 @@ PROXY_INTERVAL = 1
 DOWNLOADER_MIDDLEWARES = {
     # "base.downloadermiddlewares.proxy.ProxyMiddleware": 200,
     "base.downloadermiddlewares.encode.EncodingDiscriminateMiddleware": 100,
-    "base.downloadermiddlewares.retry.RetryMiddleware": 300,
+    # "base.downloadermiddlewares.retry.RetryMiddleware": 300,
     "base.downloadermiddlewares.useragent.UserAgentMiddleware": 400,
+    "base.downloadermiddlewares.runtime.CheckRunTime": 500,
 }
 
 # 同时允许任务数量
 TASK_LIMIT = 5
+
+RUN_TIME = {"day": (1, 31), "week": (0, 6), "hour": (0, 23), "minute": (0, 59)}
 
 ######################### redis配置 #########################
 REDIS_PARAMS = {

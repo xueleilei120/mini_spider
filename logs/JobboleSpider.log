@@ -1,0 +1,1056 @@
+[INFO] [21320] 2018-01-27 16:10:51,186 - ---------------> JobboleSpider: start <---------------
+[INFO] [21320] 2018-01-27 16:10:51,187 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [21320] 2018-01-27 16:10:51,213 - Using selector: SelectSelector
+[WARNING] [21320] 2018-01-27 16:10:51,267 - time.sleep(1)
+[WARNING] [21320] 2018-01-27 16:10:52,293 - time.sleep(1)
+[DEBUG] [21320] 2018-01-27 16:10:52,794 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [21320] 2018-01-27 16:10:52,818 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [21320] 2018-01-27 16:10:52,867 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [21320] 2018-01-27 16:10:52,925 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [21320] 2018-01-27 16:10:53,111 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [21320] 2018-01-27 16:10:53,132 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [21320] 2018-01-27 16:10:53,227 - utf-8  confidence = 0.99
+[DEBUG] [21320] 2018-01-27 16:10:53,228 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,228 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,228 - GB2312 Chinese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,228 - EUC-KR Korean confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,228 - CP949 Korean confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,228 - Big5 Chinese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,229 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,229 - windows-1251 Russian confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,229 - KOI8-R Russian confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,229 - ISO-8859-5 not active
+[DEBUG] [21320] 2018-01-27 16:10:53,229 - MacCyrillic not active
+[DEBUG] [21320] 2018-01-27 16:10:53,229 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [21320] 2018-01-27 16:10:53,229 - IBM855 not active
+[DEBUG] [21320] 2018-01-27 16:10:53,230 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [21320] 2018-01-27 16:10:53,230 - windows-1253 Greek confidence = 0.0
+[DEBUG] [21320] 2018-01-27 16:10:53,230 - ISO-8859-5 not active
+[DEBUG] [21320] 2018-01-27 16:10:53,230 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [21320] 2018-01-27 16:10:53,230 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [21320] 2018-01-27 16:10:53,230 - ISO-8859-9 Turkish confidence = 0.413790912497208
+[DEBUG] [21320] 2018-01-27 16:10:53,230 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [21320] 2018-01-27 16:10:53,231 - windows-1255 not active
+[DEBUG] [21320] 2018-01-27 16:10:53,231 - windows-1255 not active
+[DEBUG] [21320] 2018-01-27 16:10:53,231 - utf-8  confidence = 0.99
+[DEBUG] [21320] 2018-01-27 16:10:53,231 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,231 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,231 - GB2312 Chinese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,231 - EUC-KR Korean confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,232 - CP949 Korean confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,232 - Big5 Chinese confidence = 0.01
+[DEBUG] [21320] 2018-01-27 16:10:53,232 - EUC-TW Taiwan confidence = 0.01
+[INFO] [21320] 2018-01-27 16:10:53,237 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[ERROR] [21320] 2018-01-27 16:10:53,238 - Task exception was never retrieved
+future: <Task finished coro=<Engine._process_request() done, defined at D:/notes/mini_spider\base\core\engine.py:84> exception=NameError("name 'Request' is not defined",)>
+Traceback (most recent call last):
+  File "D:/notes/mini_spider\base\core\engine.py", line 90, in _process_request
+    self._handle_downloader_output(response, request, spider)
+  File "D:/notes/mini_spider\base\core\engine.py", line 103, in _handle_downloader_output
+    self.process_response(response, request, spider)
+  File "D:/notes/mini_spider\base\core\engine.py", line 109, in process_response
+    self.handle_spider_output(ret, spider)
+  File "D:/notes/mini_spider\base\core\engine.py", line 112, in handle_spider_output
+    for item in result:
+  File "D:/notes/mini_spider\spiders\jobbole_spider.py", line 26, in parse
+    yield Request(next_url, callback=self.parse, dont_filter=True)
+NameError: name 'Request' is not defined
+[WARNING] [21320] 2018-01-27 16:10:53,313 - time.sleep(1)
+[WARNING] [21320] 2018-01-27 16:10:54,340 - time.sleep(1)
+[WARNING] [21320] 2018-01-27 16:10:55,367 - time.sleep(1)
+[INFO] [32580] 2018-01-27 16:11:17,205 - ---------------> JobboleSpider: start <---------------
+[INFO] [32580] 2018-01-27 16:11:17,206 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [32580] 2018-01-27 16:11:17,229 - Using selector: SelectSelector
+[WARNING] [32580] 2018-01-27 16:11:17,277 - time.sleep(1)
+[WARNING] [32580] 2018-01-27 16:11:18,302 - time.sleep(1)
+[DEBUG] [32580] 2018-01-27 16:11:18,826 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [32580] 2018-01-27 16:11:18,851 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [32580] 2018-01-27 16:11:18,900 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [32580] 2018-01-27 16:11:18,959 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [32580] 2018-01-27 16:11:19,149 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [32580] 2018-01-27 16:11:19,170 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [32580] 2018-01-27 16:11:19,265 - utf-8  confidence = 0.99
+[DEBUG] [32580] 2018-01-27 16:11:19,265 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,265 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,266 - GB2312 Chinese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,266 - EUC-KR Korean confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,266 - CP949 Korean confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,266 - Big5 Chinese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,266 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,266 - windows-1251 Russian confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,266 - KOI8-R Russian confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,267 - ISO-8859-5 not active
+[DEBUG] [32580] 2018-01-27 16:11:19,267 - MacCyrillic not active
+[DEBUG] [32580] 2018-01-27 16:11:19,267 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [32580] 2018-01-27 16:11:19,267 - IBM855 not active
+[DEBUG] [32580] 2018-01-27 16:11:19,267 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [32580] 2018-01-27 16:11:19,267 - windows-1253 Greek confidence = 0.0
+[DEBUG] [32580] 2018-01-27 16:11:19,267 - ISO-8859-5 not active
+[DEBUG] [32580] 2018-01-27 16:11:19,268 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [32580] 2018-01-27 16:11:19,268 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [32580] 2018-01-27 16:11:19,268 - ISO-8859-9 Turkish confidence = 0.413790912497208
+[DEBUG] [32580] 2018-01-27 16:11:19,268 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [32580] 2018-01-27 16:11:19,268 - windows-1255 not active
+[DEBUG] [32580] 2018-01-27 16:11:19,268 - windows-1255 not active
+[DEBUG] [32580] 2018-01-27 16:11:19,268 - utf-8  confidence = 0.99
+[DEBUG] [32580] 2018-01-27 16:11:19,269 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,269 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,269 - GB2312 Chinese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,269 - EUC-KR Korean confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,269 - CP949 Korean confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,269 - Big5 Chinese confidence = 0.01
+[DEBUG] [32580] 2018-01-27 16:11:19,269 - EUC-TW Taiwan confidence = 0.01
+[INFO] [32580] 2018-01-27 16:11:19,276 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [32580] 2018-01-27 16:11:21,479 - http://blog.jobbole.com/113525/
+[DEBUG] [32580] 2018-01-27 16:11:21,484 - push item: {'title': '2018 �꣬����ԱҪ�߱���Щ���ľ�������', 'url': 'http://blog.jobbole.com/113525/'}
+[DEBUG] [32580] 2018-01-27 16:11:21,590 - http://blog.jobbole.com/113538/
+[DEBUG] [32580] 2018-01-27 16:11:21,594 - push item: {'title': '�� C ���Գ�����', 'url': 'http://blog.jobbole.com/113538/'}
+[DEBUG] [32580] 2018-01-27 16:11:21,621 - http://blog.jobbole.com/113532/
+[DEBUG] [32580] 2018-01-27 16:11:21,626 - push item: {'title': 'һ��������ţ�Գ���Ա��Ƹ���²ۺͽ���', 'url': 'http://blog.jobbole.com/113532/'}
+[DEBUG] [32580] 2018-01-27 16:11:21,654 - http://blog.jobbole.com/113526/
+[DEBUG] [32580] 2018-01-27 16:11:21,658 - push item: {'title': '2018 �����߼��ܵ��飺��Щ��������ܻ�ӭ', 'url': 'http://blog.jobbole.com/113526/'}
+[INFO] [32580] 2018-01-27 16:11:21,692 - next page url:http://blog.jobbole.com/all-posts/page/3/
+[DEBUG] [32580] 2018-01-27 16:11:22,853 - http://blog.jobbole.com/113519/
+[DEBUG] [32580] 2018-01-27 16:11:22,858 - push item: {'title': 'Linux �¸��ļ��еĽṹ˵������;����', 'url': 'http://blog.jobbole.com/113519/'}
+[WARNING] [36036] 2018-01-27 19:41:45,430 - Resuming crawl (30 requests scheduled)
+[INFO] [36036] 2018-01-27 19:41:45,433 - ---------------> JobboleSpider: start <---------------
+[INFO] [36036] 2018-01-27 19:41:45,433 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [36036] 2018-01-27 19:41:45,461 - Using selector: SelectSelector
+[DEBUG] [36036] 2018-01-27 19:41:47,147 - ISO-8859-5 confidence = 0.00043743638184354764, below negative shortcut threshhold 0.05
+[DEBUG] [36036] 2018-01-27 19:41:47,172 - MacCyrillic confidence = 0.022834781514260074, below negative shortcut threshhold 0.05
+[DEBUG] [36036] 2018-01-27 19:41:47,222 - IBM855 confidence = 0.043350882820237226, below negative shortcut threshhold 0.05
+[DEBUG] [36036] 2018-01-27 19:41:47,281 - ISO-8859-5 confidence = 0.00042796519142262464, below negative shortcut threshhold 0.05
+[DEBUG] [36036] 2018-01-27 19:41:47,461 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [36036] 2018-01-27 19:41:47,482 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [36036] 2018-01-27 19:41:47,570 - utf-8  confidence = 0.99
+[DEBUG] [36036] 2018-01-27 19:41:47,570 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,570 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,570 - GB2312 Chinese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,571 - EUC-KR Korean confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,571 - CP949 Korean confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,571 - Big5 Chinese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,571 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,571 - windows-1251 Russian confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,571 - KOI8-R Russian confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,571 - ISO-8859-5 not active
+[DEBUG] [36036] 2018-01-27 19:41:47,572 - MacCyrillic not active
+[DEBUG] [36036] 2018-01-27 19:41:47,572 - IBM866 Russian confidence = 0.08271335951684713
+[DEBUG] [36036] 2018-01-27 19:41:47,572 - IBM855 not active
+[DEBUG] [36036] 2018-01-27 19:41:47,572 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [36036] 2018-01-27 19:41:47,572 - windows-1253 Greek confidence = 0.0
+[DEBUG] [36036] 2018-01-27 19:41:47,572 - ISO-8859-5 not active
+[DEBUG] [36036] 2018-01-27 19:41:47,573 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [36036] 2018-01-27 19:41:47,573 - TIS-620 Thai confidence = 0.05986303677308888
+[DEBUG] [36036] 2018-01-27 19:41:47,573 - ISO-8859-9 Turkish confidence = 0.4074355960009242
+[DEBUG] [36036] 2018-01-27 19:41:47,573 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [36036] 2018-01-27 19:41:47,573 - windows-1255 not active
+[DEBUG] [36036] 2018-01-27 19:41:47,573 - windows-1255 not active
+[DEBUG] [36036] 2018-01-27 19:41:47,573 - utf-8  confidence = 0.99
+[DEBUG] [36036] 2018-01-27 19:41:47,574 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,574 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,574 - GB2312 Chinese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,574 - EUC-KR Korean confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,574 - CP949 Korean confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,574 - Big5 Chinese confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,574 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [36036] 2018-01-27 19:41:47,575 - http://blog.jobbole.com/113486/
+[DEBUG] [36036] 2018-01-27 19:41:47,579 - push item: {'title': '�ع� 2017 �귢���� 10 �������ݿ�ϵͳ', 'url': 'http://blog.jobbole.com/113486/'}
+[DEBUG] [36036] 2018-01-27 19:41:47,687 - http://blog.jobbole.com/113480/
+[DEBUG] [36036] 2018-01-27 19:41:47,694 - push item: {'title': 'Pick��һ�� Linux �ϵ�������ģ����������', 'url': 'http://blog.jobbole.com/113480/'}
+[DEBUG] [36036] 2018-01-27 19:41:47,746 - http://blog.jobbole.com/113471/
+[DEBUG] [36036] 2018-01-27 19:41:47,751 - push item: {'title': '�� Linux ���ն���α��һ��������ڿ͵���Ļ', 'url': 'http://blog.jobbole.com/113471/'}
+[DEBUG] [36036] 2018-01-27 19:41:47,774 - http://blog.jobbole.com/113479/
+[DEBUG] [36036] 2018-01-27 19:41:47,780 - push item: {'title': 'Linux �� fmt �����÷��밸��', 'url': 'http://blog.jobbole.com/113479/'}
+[DEBUG] [36036] 2018-01-27 19:41:47,802 - http://blog.jobbole.com/113474/
+[DEBUG] [36036] 2018-01-27 19:41:47,806 - push item: {'title': '��ֹͣ��Ա��', 'url': 'http://blog.jobbole.com/113474/'}
+[DEBUG] [36036] 2018-01-27 19:41:48,865 - http://blog.jobbole.com/113467/
+[DEBUG] [36036] 2018-01-27 19:41:48,870 - push item: {'title': '��������ѧ��ָ��', 'url': 'http://blog.jobbole.com/113467/'}
+[DEBUG] [36036] 2018-01-27 19:41:49,011 - http://blog.jobbole.com/113463/
+[DEBUG] [36036] 2018-01-27 19:41:49,015 - push item: {'title': '���ܻ��ҵı���', 'url': 'http://blog.jobbole.com/113463/'}
+[DEBUG] [36036] 2018-01-27 19:41:49,068 - http://blog.jobbole.com/113452/
+[DEBUG] [36036] 2018-01-27 19:41:49,075 - push item: {'title': 'ͨ��ʵ��ѧϰ tcpdump ����', 'url': 'http://blog.jobbole.com/113452/'}
+[DEBUG] [36036] 2018-01-27 19:41:49,099 - http://blog.jobbole.com/113459/
+[DEBUG] [36036] 2018-01-27 19:41:49,109 - push item: {'title': '����ϵͳ�����⻯����', 'url': 'http://blog.jobbole.com/113459/'}
+[INFO] [36036] 2018-01-27 19:41:49,192 - next page url:http://blog.jobbole.com/all-posts/page/4/
+[DEBUG] [36036] 2018-01-27 19:41:50,538 - http://blog.jobbole.com/113443/
+[DEBUG] [36036] 2018-01-27 19:41:50,542 - push item: {'title': '���ø���Ŀ�� IT ��������Ҫ������ 3 ��ԭ��', 'url': 'http://blog.jobbole.com/113443/'}
+[DEBUG] [36036] 2018-01-27 19:41:50,888 - http://blog.jobbole.com/113448/
+[DEBUG] [36036] 2018-01-27 19:41:50,896 - push item: {'title': '��docker����������ϵͳ����', 'url': 'http://blog.jobbole.com/113448/'}
+[DEBUG] [36036] 2018-01-27 19:41:51,541 - http://blog.jobbole.com/113428/
+[DEBUG] [36036] 2018-01-27 19:41:51,546 - push item: {'title': '���������Ž̳�', 'url': 'http://blog.jobbole.com/113428/'}
+[DEBUG] [36036] 2018-01-27 19:41:51,722 - http://blog.jobbole.com/113422/
+[DEBUG] [36036] 2018-01-27 19:41:51,729 - push item: {'title': '12 ������ Linux �� MySQL/MariaDB ��ȫ���ʵ��', 'url': 'http://blog.jobbole.com/113422/'}
+[DEBUG] [36036] 2018-01-27 19:41:51,785 - http://blog.jobbole.com/113429/
+[DEBUG] [36036] 2018-01-27 19:41:51,789 - push item: {'title': '���ر����Ž̳�', 'url': 'http://blog.jobbole.com/113429/'}
+[DEBUG] [36036] 2018-01-27 19:41:51,872 - http://blog.jobbole.com/113437/
+[DEBUG] [36036] 2018-01-27 19:41:51,878 - push item: {'title': '����Ҫ�õ� Linux ���� ��', 'url': 'http://blog.jobbole.com/113437/'}
+[DEBUG] [36036] 2018-01-27 19:41:52,050 - http://blog.jobbole.com/113417/
+[DEBUG] [36036] 2018-01-27 19:41:52,058 - push item: {'title': '���ڸ��ؾ����һ�У��ܽ���˼��', 'url': 'http://blog.jobbole.com/113417/'}
+[DEBUG] [36036] 2018-01-27 19:41:52,764 - http://blog.jobbole.com/113413/
+[DEBUG] [36036] 2018-01-27 19:41:52,772 - push item: {'title': '��־��������The art of logging��', 'url': 'http://blog.jobbole.com/113413/'}
+[DEBUG] [36036] 2018-01-27 19:41:52,927 - http://blog.jobbole.com/113401/
+[DEBUG] [36036] 2018-01-27 19:41:52,932 - push item: {'title': '��������Ϸ����뿪����Ů����Ա', 'url': 'http://blog.jobbole.com/113401/'}
+[DEBUG] [36036] 2018-01-27 19:41:52,984 - http://blog.jobbole.com/113410/
+[DEBUG] [36036] 2018-01-27 19:41:52,993 - push item: {'title': '10 �����ӽ���ѧ�� ncat (nc) ����', 'url': 'http://blog.jobbole.com/113410/'}
+[DEBUG] [36036] 2018-01-27 19:41:53,177 - http://blog.jobbole.com/113396/
+[DEBUG] [36036] 2018-01-27 19:41:53,197 - push item: {'title': '��¡������:Google Guava���Դ�����������Redis Bitmaps���ع�', 'url': 'http://blog.jobbole.com/113396/'}
+[DEBUG] [36036] 2018-01-27 19:41:53,249 - http://blog.jobbole.com/113215/
+[DEBUG] [36036] 2018-01-27 19:41:53,254 - push item: {'title': 'ѧ������Ƶ���������ʦ���˽��ʱ��֪ʶ', 'url': 'http://blog.jobbole.com/113215/'}
+[WARNING] [36940] 2018-01-27 20:56:16,587 - Resuming crawl (24 requests scheduled)
+[WARNING] [30644] 2018-01-27 20:56:39,951 - Resuming crawl (24 requests scheduled)
+[INFO] [30644] 2018-01-27 20:56:39,954 - ---------------> JobboleSpider: start <---------------
+[INFO] [30644] 2018-01-27 20:56:39,954 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [30644] 2018-01-27 20:56:39,982 - Using selector: SelectSelector
+[DEBUG] [30644] 2018-01-27 20:56:41,692 - ISO-8859-5 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:41,721 - MacCyrillic confidence = 0.021285439633155465, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:41,782 - IBM855 confidence = 0.048419229287470576, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:41,805 - ISO-8859-7 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:41,826 - windows-1253 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:41,852 - ISO-8859-5 confidence = 0.00033837976458410684, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:42,059 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:42,083 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [30644] 2018-01-27 20:56:42,183 - utf-8  confidence = 0.99
+[DEBUG] [30644] 2018-01-27 20:56:42,183 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,183 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,183 - GB2312 Chinese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,183 - EUC-KR Korean confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,184 - CP949 Korean confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,184 - Big5 Chinese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,184 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,184 - windows-1251 Russian confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,184 - KOI8-R Russian confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,184 - ISO-8859-5 not active
+[DEBUG] [30644] 2018-01-27 20:56:42,184 - MacCyrillic not active
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - IBM866 Russian confidence = 0.08274371342466758
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - IBM855 not active
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - ISO-8859-7 not active
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - windows-1253 not active
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - ISO-8859-5 not active
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - TIS-620 Thai confidence = 0.060191975606901725
+[DEBUG] [30644] 2018-01-27 20:56:42,185 - ISO-8859-9 Turkish confidence = 0.3992179868362167
+[DEBUG] [30644] 2018-01-27 20:56:42,186 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [30644] 2018-01-27 20:56:42,186 - windows-1255 not active
+[DEBUG] [30644] 2018-01-27 20:56:42,186 - windows-1255 not active
+[DEBUG] [30644] 2018-01-27 20:56:42,186 - utf-8  confidence = 0.99
+[DEBUG] [30644] 2018-01-27 20:56:42,186 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,186 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,187 - GB2312 Chinese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,187 - EUC-KR Korean confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,187 - CP949 Korean confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,187 - Big5 Chinese confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,187 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [30644] 2018-01-27 20:56:42,187 - http://blog.jobbole.com/113343/
+[DEBUG] [30644] 2018-01-27 20:56:42,193 - push item: {'title': '�Ҽ�������Щ�޴��İ�ȫ©��', 'url': 'http://blog.jobbole.com/113343/'}
+[INFO] [30644] 2018-01-27 20:56:42,314 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [30644] 2018-01-27 20:56:42,370 - Filtered duplicate request: <GET http://blog.jobbole.com/113538/>
+[DEBUG] [30644] 2018-01-27 20:56:42,397 - Filtered duplicate request: <GET http://blog.jobbole.com/113532/>
+[DEBUG] [30644] 2018-01-27 20:56:42,424 - Filtered duplicate request: <GET http://blog.jobbole.com/113525/>
+[DEBUG] [30644] 2018-01-27 20:56:42,451 - Filtered duplicate request: <GET http://blog.jobbole.com/113526/>
+[DEBUG] [30644] 2018-01-27 20:56:42,478 - Filtered duplicate request: <GET http://blog.jobbole.com/113519/>
+[DEBUG] [30644] 2018-01-27 20:56:42,505 - Filtered duplicate request: <GET http://blog.jobbole.com/113505/>
+[DEBUG] [30644] 2018-01-27 20:56:42,532 - Filtered duplicate request: <GET http://blog.jobbole.com/113509/>
+[DEBUG] [30644] 2018-01-27 20:56:42,560 - Filtered duplicate request: <GET http://blog.jobbole.com/113506/>
+[DEBUG] [30644] 2018-01-27 20:56:42,586 - Filtered duplicate request: <GET http://blog.jobbole.com/113499/>
+[DEBUG] [30644] 2018-01-27 20:56:42,614 - Filtered duplicate request: <GET http://blog.jobbole.com/113493/>
+[DEBUG] [30644] 2018-01-27 20:56:42,642 - Filtered duplicate request: <GET http://blog.jobbole.com/113490/>
+[DEBUG] [30644] 2018-01-27 20:56:42,669 - Filtered duplicate request: <GET http://blog.jobbole.com/113486/>
+[DEBUG] [30644] 2018-01-27 20:56:42,697 - Filtered duplicate request: <GET http://blog.jobbole.com/113480/>
+[DEBUG] [30644] 2018-01-27 20:56:42,724 - Filtered duplicate request: <GET http://blog.jobbole.com/113479/>
+[DEBUG] [30644] 2018-01-27 20:56:42,751 - Filtered duplicate request: <GET http://blog.jobbole.com/113474/>
+[DEBUG] [30644] 2018-01-27 20:56:42,778 - Filtered duplicate request: <GET http://blog.jobbole.com/113471/>
+[DEBUG] [30644] 2018-01-27 20:56:42,805 - Filtered duplicate request: <GET http://blog.jobbole.com/113467/>
+[DEBUG] [30644] 2018-01-27 20:56:42,831 - Filtered duplicate request: <GET http://blog.jobbole.com/113463/>
+[DEBUG] [30644] 2018-01-27 20:56:42,859 - Filtered duplicate request: <GET http://blog.jobbole.com/113459/>
+[DEBUG] [30644] 2018-01-27 20:56:42,886 - Filtered duplicate request: <GET http://blog.jobbole.com/113452/>
+[INFO] [30644] 2018-01-27 20:56:42,892 - next page url:http://blog.jobbole.com/all-posts/page/5/
+[DEBUG] [30644] 2018-01-27 20:56:44,013 - http://blog.jobbole.com/113347/
+[DEBUG] [30644] 2018-01-27 20:56:44,022 - push item: {'title': '�Keepalived + Nginx + Tomcat�ĸ߿��ø��ؾ���ܹ�', 'url': 'http://blog.jobbole.com/113347/'}
+[DEBUG] [30644] 2018-01-27 20:56:44,049 - http://blog.jobbole.com/113352/
+[DEBUG] [30644] 2018-01-27 20:56:44,056 - push item: {'title': 'Linux �ƶ����������ļ�/Ŀ¼��mv ��10��ʵ������', 'url': 'http://blog.jobbole.com/113352/'}
+[DEBUG] [30644] 2018-01-27 20:56:44,312 - http://blog.jobbole.com/113339/
+[DEBUG] [30644] 2018-01-27 20:56:44,325 - push item: {'title': '����ڲ��ᵼ�·�����崻�������£��� PHP ��ȡ���ļ�', 'url': 'http://blog.jobbole.com/113339/'}
+[DEBUG] [30644] 2018-01-27 20:56:45,301 - http://blog.jobbole.com/113230/
+[DEBUG] [30644] 2018-01-27 20:56:45,307 - push item: {'title': '�ͻ���Ҫ�� vs �ͻ�ʵ��Ԥ�㣺���������������ģʽ \u200b\u200b\u200b\u200b', 'url': 'http://blog.jobbole.com/113230/'}
+[DEBUG] [30644] 2018-01-27 20:56:45,361 - http://blog.jobbole.com/112148/
+[DEBUG] [30644] 2018-01-27 20:56:45,366 - push item: {'title': '������������ʦ����Щ׼��������������', 'url': 'http://blog.jobbole.com/112148/'}
+[DEBUG] [30644] 2018-01-27 20:56:45,421 - http://blog.jobbole.com/113333/
+[DEBUG] [30644] 2018-01-27 20:56:45,426 - push item: {'title': 'ʲô�ǽ�ʬ���̣�����ҵ���ɱ����ʬ���̣�', 'url': 'http://blog.jobbole.com/113333/'}
+[DEBUG] [30644] 2018-01-27 20:56:45,481 - http://blog.jobbole.com/113328/
+[DEBUG] [30644] 2018-01-27 20:56:45,496 - push item: {'title': '7 ��ʹ�� bcc/BPF �����ܷ�������', 'url': 'http://blog.jobbole.com/113328/'}
+[DEBUG] [30644] 2018-01-27 20:56:45,668 - http://blog.jobbole.com/113315/
+[DEBUG] [30644] 2018-01-27 20:56:45,673 - push item: {'title': '̸̸ MySQL ��ʽ����ת��', 'url': 'http://blog.jobbole.com/113315/'}
+[WARNING] [26672] 2018-01-27 20:59:49,319 - Resuming crawl (30 requests scheduled)
+[INFO] [26672] 2018-01-27 20:59:49,322 - ---------------> JobboleSpider: start <---------------
+[INFO] [26672] 2018-01-27 20:59:49,323 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [26672] 2018-01-27 20:59:49,345 - Using selector: SelectSelector
+[DEBUG] [26672] 2018-01-27 20:59:51,072 - ISO-8859-5 confidence = 0.00033464863046344236, below negative shortcut threshhold 0.05
+[DEBUG] [26672] 2018-01-27 20:59:51,111 - MacCyrillic confidence = 0.02389916406209424, below negative shortcut threshhold 0.05
+[DEBUG] [26672] 2018-01-27 20:59:51,218 - ISO-8859-7 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [26672] 2018-01-27 20:59:51,246 - windows-1253 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [26672] 2018-01-27 20:59:51,281 - ISO-8859-5 confidence = 0.000220651987007595, below negative shortcut threshhold 0.05
+[DEBUG] [26672] 2018-01-27 20:59:51,523 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [26672] 2018-01-27 20:59:51,554 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [26672] 2018-01-27 20:59:51,665 - utf-8  confidence = 0.99
+[DEBUG] [26672] 2018-01-27 20:59:51,665 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,666 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,666 - GB2312 Chinese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,666 - EUC-KR Korean confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,666 - CP949 Korean confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,666 - Big5 Chinese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,666 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,666 - windows-1251 Russian confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,667 - KOI8-R Russian confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,667 - ISO-8859-5 not active
+[DEBUG] [26672] 2018-01-27 20:59:51,667 - MacCyrillic not active
+[DEBUG] [26672] 2018-01-27 20:59:51,667 - IBM866 Russian confidence = 0.06495569341731065
+[DEBUG] [26672] 2018-01-27 20:59:51,667 - IBM855 Russian confidence = 0.05407261660550944
+[DEBUG] [26672] 2018-01-27 20:59:51,667 - ISO-8859-7 not active
+[DEBUG] [26672] 2018-01-27 20:59:51,668 - windows-1253 not active
+[DEBUG] [26672] 2018-01-27 20:59:51,668 - ISO-8859-5 not active
+[DEBUG] [26672] 2018-01-27 20:59:51,668 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [26672] 2018-01-27 20:59:51,668 - TIS-620 Thai confidence = 0.05741174398379232
+[DEBUG] [26672] 2018-01-27 20:59:51,668 - ISO-8859-9 Turkish confidence = 0.36677800616962203
+[DEBUG] [26672] 2018-01-27 20:59:51,668 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [26672] 2018-01-27 20:59:51,668 - windows-1255 not active
+[DEBUG] [26672] 2018-01-27 20:59:51,669 - windows-1255 not active
+[DEBUG] [26672] 2018-01-27 20:59:51,669 - utf-8  confidence = 0.99
+[DEBUG] [26672] 2018-01-27 20:59:51,669 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,669 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,669 - GB2312 Chinese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,669 - EUC-KR Korean confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,670 - CP949 Korean confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,670 - Big5 Chinese confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,670 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [26672] 2018-01-27 20:59:51,670 - http://blog.jobbole.com/112809/
+[DEBUG] [26672] 2018-01-27 20:59:51,676 - push item: {'title': '̸̸����Ա����ְ������', 'url': 'http://blog.jobbole.com/112809/'}
+[DEBUG] [26672] 2018-01-27 20:59:51,778 - http://blog.jobbole.com/113277/
+[DEBUG] [26672] 2018-01-27 20:59:51,782 - push item: {'title': 'ls ����� 20 ��ʵ�÷���', 'url': 'http://blog.jobbole.com/113277/'}
+[DEBUG] [26672] 2018-01-27 20:59:51,806 - http://blog.jobbole.com/113146/
+[DEBUG] [26672] 2018-01-27 20:59:51,810 - push item: {'title': 'Խ��Խ���ӵ�����������Ŀ', 'url': 'http://blog.jobbole.com/113146/'}
+[DEBUG] [26672] 2018-01-27 20:59:51,834 - http://blog.jobbole.com/113217/
+[DEBUG] [26672] 2018-01-27 20:59:51,838 - push item: {'title': '���������еľ�Ӣ����', 'url': 'http://blog.jobbole.com/113217/'}
+[DEBUG] [26672] 2018-01-27 20:59:51,863 - http://blog.jobbole.com/113226/
+[DEBUG] [26672] 2018-01-27 20:59:51,869 - push item: {'title': '����� Linux ��ͳ�Ƹ��������е�����', 'url': 'http://blog.jobbole.com/113226/'}
+[DEBUG] [26672] 2018-01-27 20:59:52,882 - http://blog.jobbole.com/113222/
+[DEBUG] [26672] 2018-01-27 20:59:52,887 - push item: {'title': '������վ�����ٶȵ� SQL ��ѯ�Ż�����', 'url': 'http://blog.jobbole.com/113222/'}
+[INFO] [26672] 2018-01-27 20:59:53,091 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [26672] 2018-01-27 20:59:53,135 - Filtered duplicate request: <GET http://blog.jobbole.com/113538/>
+[DEBUG] [26672] 2018-01-27 20:59:53,157 - Filtered duplicate request: <GET http://blog.jobbole.com/113532/>
+[DEBUG] [26672] 2018-01-27 20:59:53,178 - Filtered duplicate request: <GET http://blog.jobbole.com/113525/>
+[DEBUG] [26672] 2018-01-27 20:59:53,200 - Filtered duplicate request: <GET http://blog.jobbole.com/113526/>
+[DEBUG] [26672] 2018-01-27 20:59:53,222 - Filtered duplicate request: <GET http://blog.jobbole.com/113519/>
+[DEBUG] [26672] 2018-01-27 20:59:53,243 - Filtered duplicate request: <GET http://blog.jobbole.com/113505/>
+[DEBUG] [26672] 2018-01-27 20:59:53,265 - Filtered duplicate request: <GET http://blog.jobbole.com/113509/>
+[DEBUG] [26672] 2018-01-27 20:59:53,286 - Filtered duplicate request: <GET http://blog.jobbole.com/113506/>
+[DEBUG] [26672] 2018-01-27 20:59:53,307 - Filtered duplicate request: <GET http://blog.jobbole.com/113499/>
+[DEBUG] [26672] 2018-01-27 20:59:53,329 - Filtered duplicate request: <GET http://blog.jobbole.com/113493/>
+[DEBUG] [26672] 2018-01-27 20:59:53,351 - Filtered duplicate request: <GET http://blog.jobbole.com/113490/>
+[DEBUG] [26672] 2018-01-27 20:59:53,372 - Filtered duplicate request: <GET http://blog.jobbole.com/113486/>
+[DEBUG] [26672] 2018-01-27 20:59:53,395 - Filtered duplicate request: <GET http://blog.jobbole.com/113480/>
+[DEBUG] [26672] 2018-01-27 20:59:53,417 - Filtered duplicate request: <GET http://blog.jobbole.com/113479/>
+[DEBUG] [26672] 2018-01-27 20:59:53,440 - Filtered duplicate request: <GET http://blog.jobbole.com/113474/>
+[DEBUG] [26672] 2018-01-27 20:59:53,462 - Filtered duplicate request: <GET http://blog.jobbole.com/113471/>
+[DEBUG] [26672] 2018-01-27 20:59:53,483 - Filtered duplicate request: <GET http://blog.jobbole.com/113467/>
+[DEBUG] [26672] 2018-01-27 20:59:53,504 - Filtered duplicate request: <GET http://blog.jobbole.com/113463/>
+[DEBUG] [26672] 2018-01-27 20:59:53,526 - Filtered duplicate request: <GET http://blog.jobbole.com/113459/>
+[DEBUG] [26672] 2018-01-27 20:59:53,547 - Filtered duplicate request: <GET http://blog.jobbole.com/113452/>
+[INFO] [26672] 2018-01-27 20:59:53,575 - next page url:http://blog.jobbole.com/all-posts/page/3/
+[DEBUG] [26672] 2018-01-27 20:59:53,619 - Filtered duplicate request: <GET http://blog.jobbole.com/113448/>
+[DEBUG] [26672] 2018-01-27 20:59:53,641 - Filtered duplicate request: <GET http://blog.jobbole.com/113443/>
+[DEBUG] [26672] 2018-01-27 20:59:53,663 - Filtered duplicate request: <GET http://blog.jobbole.com/113437/>
+[DEBUG] [26672] 2018-01-27 20:59:53,684 - Filtered duplicate request: <GET http://blog.jobbole.com/113429/>
+[DEBUG] [26672] 2018-01-27 20:59:53,706 - Filtered duplicate request: <GET http://blog.jobbole.com/113428/>
+[DEBUG] [26672] 2018-01-27 20:59:53,729 - Filtered duplicate request: <GET http://blog.jobbole.com/113422/>
+[DEBUG] [26672] 2018-01-27 20:59:53,751 - Filtered duplicate request: <GET http://blog.jobbole.com/113417/>
+[DEBUG] [26672] 2018-01-27 20:59:53,772 - Filtered duplicate request: <GET http://blog.jobbole.com/113413/>
+[DEBUG] [26672] 2018-01-27 20:59:53,794 - Filtered duplicate request: <GET http://blog.jobbole.com/113410/>
+[DEBUG] [26672] 2018-01-27 20:59:53,816 - Filtered duplicate request: <GET http://blog.jobbole.com/113401/>
+[DEBUG] [26672] 2018-01-27 20:59:53,837 - Filtered duplicate request: <GET http://blog.jobbole.com/113396/>
+[DEBUG] [26672] 2018-01-27 20:59:53,858 - Filtered duplicate request: <GET http://blog.jobbole.com/113215/>
+[DEBUG] [26672] 2018-01-27 20:59:53,879 - Filtered duplicate request: <GET http://blog.jobbole.com/113385/>
+[DEBUG] [26672] 2018-01-27 20:59:53,900 - Filtered duplicate request: <GET http://blog.jobbole.com/113367/>
+[DEBUG] [26672] 2018-01-27 20:59:53,921 - Filtered duplicate request: <GET http://blog.jobbole.com/113363/>
+[DEBUG] [26672] 2018-01-27 20:59:53,943 - Filtered duplicate request: <GET http://blog.jobbole.com/113361/>
+[DEBUG] [26672] 2018-01-27 20:59:53,964 - Filtered duplicate request: <GET http://blog.jobbole.com/113358/>
+[DEBUG] [26672] 2018-01-27 20:59:53,987 - Filtered duplicate request: <GET http://blog.jobbole.com/113355/>
+[DEBUG] [26672] 2018-01-27 20:59:54,007 - Filtered duplicate request: <GET http://blog.jobbole.com/113352/>
+[DEBUG] [26672] 2018-01-27 20:59:54,029 - Filtered duplicate request: <GET http://blog.jobbole.com/113343/>
+[INFO] [26672] 2018-01-27 20:59:54,035 - next page url:http://blog.jobbole.com/all-posts/page/6/
+[WARNING] [38536] 2018-01-27 21:00:04,619 - Resuming crawl (28 requests scheduled)
+[INFO] [38536] 2018-01-27 21:00:04,622 - ---------------> JobboleSpider: start <---------------
+[INFO] [38536] 2018-01-27 21:00:04,623 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [38536] 2018-01-27 21:00:04,652 - Using selector: SelectSelector
+[WARNING] [19048] 2018-01-27 21:00:29,463 - Resuming crawl (23 requests scheduled)
+[INFO] [19048] 2018-01-27 21:00:29,467 - ---------------> JobboleSpider: start <---------------
+[INFO] [19048] 2018-01-27 21:00:29,467 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [19048] 2018-01-27 21:00:29,491 - Using selector: SelectSelector
+[WARNING] [19048] 2018-01-27 21:00:29,628 - ---> Not in running time: 2018-01-27 21:00:29.628847 <---
+[WARNING] [19048] 2018-01-27 21:00:34,629 - ---> Not in running time: 2018-01-27 21:00:34.629103 <---
+[WARNING] [19048] 2018-01-27 21:00:39,629 - ---> Not in running time: 2018-01-27 21:00:39.629156 <---
+[WARNING] [19048] 2018-01-27 21:00:44,629 - ---> Not in running time: 2018-01-27 21:00:44.629267 <---
+[WARNING] [19048] 2018-01-27 21:00:49,629 - ---> Not in running time: 2018-01-27 21:00:49.629596 <---
+[WARNING] [32000] 2018-01-27 21:01:02,560 - Resuming crawl (18 requests scheduled)
+[INFO] [32000] 2018-01-27 21:01:02,563 - ---------------> JobboleSpider: start <---------------
+[INFO] [32000] 2018-01-27 21:01:02,563 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [32000] 2018-01-27 21:01:02,592 - Using selector: SelectSelector
+[WARNING] [32000] 2018-01-27 21:01:02,757 - ---> Not in running time: {'day': (1, 31), 'week': (0, 6), 'hour': (0, 20), 'minute': (0, 59)} <---
+[WARNING] [32000] 2018-01-27 21:01:07,758 - ---> Not in running time: {'day': (1, 31), 'week': (0, 6), 'hour': (0, 20), 'minute': (0, 59)} <---
+[WARNING] [32000] 2018-01-27 21:01:12,758 - ---> Not in running time: {'day': (1, 31), 'week': (0, 6), 'hour': (0, 20), 'minute': (0, 59)} <---
+[WARNING] [32000] 2018-01-27 21:01:17,758 - ---> Not in running time: {'day': (1, 31), 'week': (0, 6), 'hour': (0, 20), 'minute': (0, 59)} <---
+[WARNING] [38480] 2018-01-27 21:01:58,049 - Resuming crawl (13 requests scheduled)
+[INFO] [38480] 2018-01-27 21:01:58,052 - ---------------> JobboleSpider: start <---------------
+[INFO] [38480] 2018-01-27 21:01:58,053 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [38480] 2018-01-27 21:01:58,077 - Using selector: SelectSelector
+[WARNING] [38480] 2018-01-27 21:01:58,219 - ---> Not in running time: {'day': (1, 31), 'week': (0, 6), 'hour': (0, 23), 'minute': (30, 59)} <---
+[WARNING] [38480] 2018-01-27 21:02:03,220 - ---> Not in running time: {'day': (1, 31), 'week': (0, 6), 'hour': (0, 23), 'minute': (30, 59)} <---
+[WARNING] [38480] 2018-01-27 21:02:08,221 - ---> Not in running time: {'day': (1, 31), 'week': (0, 6), 'hour': (0, 23), 'minute': (30, 59)} <---
+[WARNING] [30796] 2018-01-27 21:03:31,074 - Resuming crawl (8 requests scheduled)
+[INFO] [30796] 2018-01-27 21:03:31,077 - ---------------> JobboleSpider: start <---------------
+[INFO] [30796] 2018-01-27 21:03:31,077 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [30796] 2018-01-27 21:03:31,100 - Using selector: SelectSelector
+[WARNING] [30796] 2018-01-27 21:03:31,233 - ---> Not in running time: minute:(30, 59) <---
+[WARNING] [30796] 2018-01-27 21:03:36,233 - ---> Not in running time: minute:(30, 59) <---
+[WARNING] [30796] 2018-01-27 21:03:41,234 - ---> Not in running time: minute:(30, 59) <---
+[WARNING] [30796] 2018-01-27 21:03:46,235 - ---> Not in running time: minute:(30, 59) <---
+[WARNING] [30796] 2018-01-27 21:03:51,235 - ---> Not in running time: minute:(30, 59) <---
+[WARNING] [30796] 2018-01-27 21:03:56,236 - ---> Not in running time: minute:(30, 59) <---
+[WARNING] [38772] 2018-01-27 21:04:03,756 - Resuming crawl (3 requests scheduled)
+[INFO] [38772] 2018-01-27 21:04:03,759 - ---------------> JobboleSpider: start <---------------
+[INFO] [38772] 2018-01-27 21:04:03,759 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [38772] 2018-01-27 21:04:03,783 - Using selector: SelectSelector
+[WARNING] [38772] 2018-01-27 21:04:03,901 - time.sleep(1)
+[WARNING] [38772] 2018-01-27 21:04:04,926 - time.sleep(1)
+[DEBUG] [38772] 2018-01-27 21:04:05,439 - ISO-8859-5 confidence = 0.0002367370252191375, below negative shortcut threshhold 0.05
+[DEBUG] [38772] 2018-01-27 21:04:05,464 - MacCyrillic confidence = 0.01998634301135844, below negative shortcut threshhold 0.05
+[DEBUG] [38772] 2018-01-27 21:04:05,515 - IBM855 confidence = 0.04740617972121641, below negative shortcut threshhold 0.05
+[DEBUG] [38772] 2018-01-27 21:04:05,574 - ISO-8859-5 confidence = 0.00046161544239751984, below negative shortcut threshhold 0.05
+[DEBUG] [38772] 2018-01-27 21:04:05,760 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [38772] 2018-01-27 21:04:05,780 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [38772] 2018-01-27 21:04:05,876 - utf-8  confidence = 0.99
+[DEBUG] [38772] 2018-01-27 21:04:05,876 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,876 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,876 - GB2312 Chinese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,877 - EUC-KR Korean confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,877 - CP949 Korean confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,877 - Big5 Chinese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,877 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,877 - windows-1251 Russian confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,877 - KOI8-R Russian confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,877 - ISO-8859-5 not active
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - MacCyrillic not active
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - IBM866 Russian confidence = 0.07710822900408289
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - IBM855 not active
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - windows-1253 Greek confidence = 0.0
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - ISO-8859-5 not active
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [38772] 2018-01-27 21:04:05,878 - TIS-620 Thai confidence = 0.07597069445237366
+[DEBUG] [38772] 2018-01-27 21:04:05,879 - ISO-8859-9 Turkish confidence = 0.4134098128032882
+[DEBUG] [38772] 2018-01-27 21:04:05,879 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [38772] 2018-01-27 21:04:05,879 - windows-1255 not active
+[DEBUG] [38772] 2018-01-27 21:04:05,879 - windows-1255 not active
+[DEBUG] [38772] 2018-01-27 21:04:05,879 - utf-8  confidence = 0.99
+[DEBUG] [38772] 2018-01-27 21:04:05,879 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,879 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,880 - GB2312 Chinese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,880 - EUC-KR Korean confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,880 - CP949 Korean confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,880 - Big5 Chinese confidence = 0.01
+[DEBUG] [38772] 2018-01-27 21:04:05,880 - EUC-TW Taiwan confidence = 0.01
+[INFO] [38772] 2018-01-27 21:04:05,886 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [38772] 2018-01-27 21:04:06,025 - Filtered duplicate request: <GET http://blog.jobbole.com/113538/>
+[DEBUG] [38772] 2018-01-27 21:04:06,049 - Filtered duplicate request: <GET http://blog.jobbole.com/113532/>
+[DEBUG] [38772] 2018-01-27 21:04:06,072 - Filtered duplicate request: <GET http://blog.jobbole.com/113525/>
+[DEBUG] [38772] 2018-01-27 21:04:06,095 - Filtered duplicate request: <GET http://blog.jobbole.com/113526/>
+[DEBUG] [38772] 2018-01-27 21:04:06,118 - Filtered duplicate request: <GET http://blog.jobbole.com/113519/>
+[DEBUG] [38772] 2018-01-27 21:04:06,140 - Filtered duplicate request: <GET http://blog.jobbole.com/113505/>
+[DEBUG] [38772] 2018-01-27 21:04:06,163 - Filtered duplicate request: <GET http://blog.jobbole.com/113509/>
+[DEBUG] [38772] 2018-01-27 21:04:06,186 - Filtered duplicate request: <GET http://blog.jobbole.com/113506/>
+[DEBUG] [38772] 2018-01-27 21:04:06,209 - Filtered duplicate request: <GET http://blog.jobbole.com/113499/>
+[DEBUG] [38772] 2018-01-27 21:04:06,232 - Filtered duplicate request: <GET http://blog.jobbole.com/113493/>
+[DEBUG] [38772] 2018-01-27 21:04:06,255 - Filtered duplicate request: <GET http://blog.jobbole.com/113490/>
+[DEBUG] [38772] 2018-01-27 21:04:06,279 - Filtered duplicate request: <GET http://blog.jobbole.com/113486/>
+[DEBUG] [38772] 2018-01-27 21:04:06,302 - Filtered duplicate request: <GET http://blog.jobbole.com/113480/>
+[DEBUG] [38772] 2018-01-27 21:04:06,326 - Filtered duplicate request: <GET http://blog.jobbole.com/113479/>
+[DEBUG] [38772] 2018-01-27 21:04:06,348 - Filtered duplicate request: <GET http://blog.jobbole.com/113474/>
+[DEBUG] [38772] 2018-01-27 21:04:06,370 - Filtered duplicate request: <GET http://blog.jobbole.com/113471/>
+[DEBUG] [38772] 2018-01-27 21:04:06,394 - Filtered duplicate request: <GET http://blog.jobbole.com/113467/>
+[DEBUG] [38772] 2018-01-27 21:04:06,417 - Filtered duplicate request: <GET http://blog.jobbole.com/113463/>
+[INFO] [38772] 2018-01-27 21:04:06,424 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [38772] 2018-01-27 21:04:06,472 - Filtered duplicate request: <GET http://blog.jobbole.com/113549/>
+[DEBUG] [38772] 2018-01-27 21:04:06,495 - Filtered duplicate request: <GET http://blog.jobbole.com/113546/>
+[DEBUG] [38772] 2018-01-27 21:04:06,517 - Filtered duplicate request: <GET http://blog.jobbole.com/113538/>
+[DEBUG] [38772] 2018-01-27 21:04:06,540 - Filtered duplicate request: <GET http://blog.jobbole.com/113532/>
+[DEBUG] [38772] 2018-01-27 21:04:06,564 - Filtered duplicate request: <GET http://blog.jobbole.com/113525/>
+[DEBUG] [38772] 2018-01-27 21:04:06,587 - Filtered duplicate request: <GET http://blog.jobbole.com/113526/>
+[DEBUG] [38772] 2018-01-27 21:04:06,610 - Filtered duplicate request: <GET http://blog.jobbole.com/113519/>
+[DEBUG] [38772] 2018-01-27 21:04:06,634 - Filtered duplicate request: <GET http://blog.jobbole.com/113505/>
+[DEBUG] [38772] 2018-01-27 21:04:06,657 - Filtered duplicate request: <GET http://blog.jobbole.com/113509/>
+[DEBUG] [38772] 2018-01-27 21:04:06,680 - Filtered duplicate request: <GET http://blog.jobbole.com/113506/>
+[DEBUG] [38772] 2018-01-27 21:04:06,704 - Filtered duplicate request: <GET http://blog.jobbole.com/113499/>
+[DEBUG] [38772] 2018-01-27 21:04:06,727 - Filtered duplicate request: <GET http://blog.jobbole.com/113493/>
+[DEBUG] [38772] 2018-01-27 21:04:06,750 - Filtered duplicate request: <GET http://blog.jobbole.com/113490/>
+[DEBUG] [38772] 2018-01-27 21:04:06,772 - Filtered duplicate request: <GET http://blog.jobbole.com/113486/>
+[DEBUG] [38772] 2018-01-27 21:04:06,796 - Filtered duplicate request: <GET http://blog.jobbole.com/113480/>
+[DEBUG] [38772] 2018-01-27 21:04:06,819 - Filtered duplicate request: <GET http://blog.jobbole.com/113479/>
+[DEBUG] [38772] 2018-01-27 21:04:06,841 - Filtered duplicate request: <GET http://blog.jobbole.com/113474/>
+[DEBUG] [38772] 2018-01-27 21:04:06,864 - Filtered duplicate request: <GET http://blog.jobbole.com/113471/>
+[DEBUG] [38772] 2018-01-27 21:04:06,888 - Filtered duplicate request: <GET http://blog.jobbole.com/113467/>
+[DEBUG] [38772] 2018-01-27 21:04:06,910 - Filtered duplicate request: <GET http://blog.jobbole.com/113463/>
+[INFO] [38772] 2018-01-27 21:04:06,916 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [38772] 2018-01-27 21:04:06,962 - Filtered duplicate request: <GET http://blog.jobbole.com/113538/>
+[DEBUG] [38772] 2018-01-27 21:04:06,986 - Filtered duplicate request: <GET http://blog.jobbole.com/113532/>
+[DEBUG] [38772] 2018-01-27 21:04:07,009 - Filtered duplicate request: <GET http://blog.jobbole.com/113525/>
+[DEBUG] [38772] 2018-01-27 21:04:07,033 - Filtered duplicate request: <GET http://blog.jobbole.com/113526/>
+[DEBUG] [38772] 2018-01-27 21:04:07,055 - Filtered duplicate request: <GET http://blog.jobbole.com/113519/>
+[DEBUG] [38772] 2018-01-27 21:04:07,078 - Filtered duplicate request: <GET http://blog.jobbole.com/113505/>
+[DEBUG] [38772] 2018-01-27 21:04:07,101 - Filtered duplicate request: <GET http://blog.jobbole.com/113509/>
+[DEBUG] [38772] 2018-01-27 21:04:07,125 - Filtered duplicate request: <GET http://blog.jobbole.com/113506/>
+[DEBUG] [38772] 2018-01-27 21:04:07,148 - Filtered duplicate request: <GET http://blog.jobbole.com/113499/>
+[DEBUG] [38772] 2018-01-27 21:04:07,172 - Filtered duplicate request: <GET http://blog.jobbole.com/113493/>
+[DEBUG] [38772] 2018-01-27 21:04:07,195 - Filtered duplicate request: <GET http://blog.jobbole.com/113490/>
+[DEBUG] [38772] 2018-01-27 21:04:07,218 - Filtered duplicate request: <GET http://blog.jobbole.com/113486/>
+[DEBUG] [38772] 2018-01-27 21:04:07,242 - Filtered duplicate request: <GET http://blog.jobbole.com/113480/>
+[DEBUG] [38772] 2018-01-27 21:04:07,265 - Filtered duplicate request: <GET http://blog.jobbole.com/113479/>
+[DEBUG] [38772] 2018-01-27 21:04:07,287 - Filtered duplicate request: <GET http://blog.jobbole.com/113474/>
+[DEBUG] [38772] 2018-01-27 21:04:07,311 - Filtered duplicate request: <GET http://blog.jobbole.com/113471/>
+[DEBUG] [38772] 2018-01-27 21:04:07,334 - Filtered duplicate request: <GET http://blog.jobbole.com/113467/>
+[DEBUG] [38772] 2018-01-27 21:04:07,357 - Filtered duplicate request: <GET http://blog.jobbole.com/113463/>
+[DEBUG] [38772] 2018-01-27 21:04:07,380 - Filtered duplicate request: <GET http://blog.jobbole.com/113459/>
+[DEBUG] [38772] 2018-01-27 21:04:07,403 - Filtered duplicate request: <GET http://blog.jobbole.com/113452/>
+[INFO] [38772] 2018-01-27 21:04:07,409 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [38772] 2018-01-27 21:04:07,456 - Filtered duplicate request: <GET http://blog.jobbole.com/113538/>
+[DEBUG] [38772] 2018-01-27 21:04:07,479 - Filtered duplicate request: <GET http://blog.jobbole.com/113532/>
+[DEBUG] [38772] 2018-01-27 21:04:07,503 - Filtered duplicate request: <GET http://blog.jobbole.com/113525/>
+[DEBUG] [38772] 2018-01-27 21:04:07,525 - Filtered duplicate request: <GET http://blog.jobbole.com/113526/>
+[DEBUG] [38772] 2018-01-27 21:04:07,549 - Filtered duplicate request: <GET http://blog.jobbole.com/113519/>
+[DEBUG] [38772] 2018-01-27 21:04:07,573 - Filtered duplicate request: <GET http://blog.jobbole.com/113505/>
+[DEBUG] [38772] 2018-01-27 21:04:07,596 - Filtered duplicate request: <GET http://blog.jobbole.com/113509/>
+[DEBUG] [38772] 2018-01-27 21:04:07,619 - Filtered duplicate request: <GET http://blog.jobbole.com/113506/>
+[DEBUG] [38772] 2018-01-27 21:04:07,643 - Filtered duplicate request: <GET http://blog.jobbole.com/113499/>
+[DEBUG] [38772] 2018-01-27 21:04:07,666 - Filtered duplicate request: <GET http://blog.jobbole.com/113493/>
+[DEBUG] [38772] 2018-01-27 21:04:07,690 - Filtered duplicate request: <GET http://blog.jobbole.com/113490/>
+[DEBUG] [38772] 2018-01-27 21:04:07,713 - Filtered duplicate request: <GET http://blog.jobbole.com/113486/>
+[DEBUG] [38772] 2018-01-27 21:04:07,736 - Filtered duplicate request: <GET http://blog.jobbole.com/113480/>
+[DEBUG] [38772] 2018-01-27 21:04:07,760 - Filtered duplicate request: <GET http://blog.jobbole.com/113479/>
+[DEBUG] [38772] 2018-01-27 21:04:07,783 - Filtered duplicate request: <GET http://blog.jobbole.com/113474/>
+[DEBUG] [38772] 2018-01-27 21:04:07,806 - Filtered duplicate request: <GET http://blog.jobbole.com/113471/>
+[DEBUG] [38772] 2018-01-27 21:04:07,830 - Filtered duplicate request: <GET http://blog.jobbole.com/113467/>
+[DEBUG] [38772] 2018-01-27 21:04:07,853 - Filtered duplicate request: <GET http://blog.jobbole.com/113463/>
+[DEBUG] [38772] 2018-01-27 21:04:07,876 - Filtered duplicate request: <GET http://blog.jobbole.com/113459/>
+[DEBUG] [38772] 2018-01-27 21:04:07,899 - Filtered duplicate request: <GET http://blog.jobbole.com/113452/>
+[INFO] [2276] 2018-01-27 21:04:56,998 - ---------------> JobboleSpider: start <---------------
+[INFO] [2276] 2018-01-27 21:04:56,998 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [2276] 2018-01-27 21:04:56,999 - Using selector: EpollSelector
+[WARNING] [2276] 2018-01-27 21:04:57,002 - time.sleep(1)
+[WARNING] [2276] 2018-01-27 21:04:58,003 - time.sleep(1)
+[DEBUG] [2276] 2018-01-27 21:04:58,581 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [2276] 2018-01-27 21:04:58,607 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [2276] 2018-01-27 21:04:58,659 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [2276] 2018-01-27 21:04:58,725 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [2276] 2018-01-27 21:04:58,897 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [2276] 2018-01-27 21:04:58,920 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [2276] 2018-01-27 21:04:59,012 - utf-8  confidence = 0.99
+[DEBUG] [2276] 2018-01-27 21:04:59,013 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,013 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,013 - GB2312 Chinese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,013 - EUC-KR Korean confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,013 - CP949 Korean confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,014 - Big5 Chinese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,014 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,014 - windows-1251 Russian confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,014 - KOI8-R Russian confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,014 - ISO-8859-5 not active
+[DEBUG] [2276] 2018-01-27 21:04:59,014 - MacCyrillic not active
+[DEBUG] [2276] 2018-01-27 21:04:59,014 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - IBM855 not active
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - windows-1253 Greek confidence = 0.0
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - ISO-8859-5 not active
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - ISO-8859-9 Turkish confidence = 0.41380510551827265
+[DEBUG] [2276] 2018-01-27 21:04:59,015 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [2276] 2018-01-27 21:04:59,016 - windows-1255 not active
+[DEBUG] [2276] 2018-01-27 21:04:59,016 - windows-1255 not active
+[DEBUG] [2276] 2018-01-27 21:04:59,016 - utf-8  confidence = 0.99
+[DEBUG] [2276] 2018-01-27 21:04:59,016 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,016 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,016 - GB2312 Chinese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,017 - EUC-KR Korean confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,017 - CP949 Korean confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,017 - Big5 Chinese confidence = 0.01
+[DEBUG] [2276] 2018-01-27 21:04:59,017 - EUC-TW Taiwan confidence = 0.01
+[INFO] [2276] 2018-01-27 21:04:59,040 - next page url:http://blog.jobbole.com/all-posts/page/2/
+[DEBUG] [2276] 2018-01-27 21:04:59,042 - Filtered duplicate request: <GET http://blog.jobbole.com/113538/>
+[DEBUG] [2276] 2018-01-27 21:04:59,043 - Filtered duplicate request: <GET http://blog.jobbole.com/113532/>
+[DEBUG] [2276] 2018-01-27 21:04:59,044 - Filtered duplicate request: <GET http://blog.jobbole.com/113525/>
+[DEBUG] [2276] 2018-01-27 21:04:59,044 - Filtered duplicate request: <GET http://blog.jobbole.com/113526/>
+[DEBUG] [2276] 2018-01-27 21:04:59,045 - Filtered duplicate request: <GET http://blog.jobbole.com/113519/>
+[DEBUG] [2276] 2018-01-27 21:04:59,045 - Filtered duplicate request: <GET http://blog.jobbole.com/113505/>
+[DEBUG] [2276] 2018-01-27 21:04:59,046 - Filtered duplicate request: <GET http://blog.jobbole.com/113509/>
+[DEBUG] [2276] 2018-01-27 21:04:59,046 - Filtered duplicate request: <GET http://blog.jobbole.com/113506/>
+[DEBUG] [2276] 2018-01-27 21:04:59,046 - Filtered duplicate request: <GET http://blog.jobbole.com/113499/>
+[DEBUG] [2276] 2018-01-27 21:04:59,047 - Filtered duplicate request: <GET http://blog.jobbole.com/113493/>
+[DEBUG] [2276] 2018-01-27 21:04:59,048 - Filtered duplicate request: <GET http://blog.jobbole.com/113490/>
+[DEBUG] [2276] 2018-01-27 21:04:59,048 - Filtered duplicate request: <GET http://blog.jobbole.com/113486/>
+[DEBUG] [2276] 2018-01-27 21:04:59,048 - Filtered duplicate request: <GET http://blog.jobbole.com/113480/>
+[DEBUG] [2276] 2018-01-27 21:04:59,049 - Filtered duplicate request: <GET http://blog.jobbole.com/113479/>
+[DEBUG] [2276] 2018-01-27 21:04:59,049 - Filtered duplicate request: <GET http://blog.jobbole.com/113474/>
+[DEBUG] [2276] 2018-01-27 21:04:59,050 - Filtered duplicate request: <GET http://blog.jobbole.com/113471/>
+[DEBUG] [2276] 2018-01-27 21:04:59,050 - Filtered duplicate request: <GET http://blog.jobbole.com/113467/>
+[DEBUG] [2276] 2018-01-27 21:04:59,051 - Filtered duplicate request: <GET http://blog.jobbole.com/113463/>
+[DEBUG] [2276] 2018-01-27 21:04:59,051 - Filtered duplicate request: <GET http://blog.jobbole.com/113459/>
+[DEBUG] [2276] 2018-01-27 21:04:59,052 - Filtered duplicate request: <GET http://blog.jobbole.com/113452/>
+[WARNING] [2276] 2018-01-27 21:04:59,054 - time.sleep(1)
+[WARNING] [2276] 2018-01-27 21:05:00,055 - time.sleep(1)
+[INFO] [2276] 2018-01-27 21:05:00,215 - next page url:http://blog.jobbole.com/all-posts/page/3/
+[DEBUG] [2276] 2018-01-27 21:05:00,217 - Filtered duplicate request: <GET http://blog.jobbole.com/113448/>
+[DEBUG] [2276] 2018-01-27 21:05:00,218 - Filtered duplicate request: <GET http://blog.jobbole.com/113443/>
+[DEBUG] [2276] 2018-01-27 21:05:00,218 - Filtered duplicate request: <GET http://blog.jobbole.com/113437/>
+[DEBUG] [2276] 2018-01-27 21:05:00,219 - Filtered duplicate request: <GET http://blog.jobbole.com/113429/>
+[DEBUG] [2276] 2018-01-27 21:05:00,219 - Filtered duplicate request: <GET http://blog.jobbole.com/113428/>
+[DEBUG] [2276] 2018-01-27 21:05:00,220 - Filtered duplicate request: <GET http://blog.jobbole.com/113422/>
+[DEBUG] [2276] 2018-01-27 21:05:00,220 - Filtered duplicate request: <GET http://blog.jobbole.com/113417/>
+[DEBUG] [2276] 2018-01-27 21:05:00,221 - Filtered duplicate request: <GET http://blog.jobbole.com/113413/>
+[DEBUG] [2276] 2018-01-27 21:05:00,221 - Filtered duplicate request: <GET http://blog.jobbole.com/113410/>
+[DEBUG] [2276] 2018-01-27 21:05:00,222 - Filtered duplicate request: <GET http://blog.jobbole.com/113401/>
+[DEBUG] [2276] 2018-01-27 21:05:00,222 - Filtered duplicate request: <GET http://blog.jobbole.com/113396/>
+[DEBUG] [2276] 2018-01-27 21:05:00,223 - Filtered duplicate request: <GET http://blog.jobbole.com/113215/>
+[DEBUG] [2276] 2018-01-27 21:05:00,223 - Filtered duplicate request: <GET http://blog.jobbole.com/113385/>
+[DEBUG] [2276] 2018-01-27 21:05:00,224 - Filtered duplicate request: <GET http://blog.jobbole.com/113367/>
+[DEBUG] [2276] 2018-01-27 21:05:00,224 - Filtered duplicate request: <GET http://blog.jobbole.com/113363/>
+[DEBUG] [2276] 2018-01-27 21:05:00,225 - Filtered duplicate request: <GET http://blog.jobbole.com/113361/>
+[DEBUG] [2276] 2018-01-27 21:05:00,225 - Filtered duplicate request: <GET http://blog.jobbole.com/113358/>
+[DEBUG] [2276] 2018-01-27 21:05:00,226 - Filtered duplicate request: <GET http://blog.jobbole.com/113355/>
+[DEBUG] [2276] 2018-01-27 21:05:00,226 - Filtered duplicate request: <GET http://blog.jobbole.com/113352/>
+[DEBUG] [2276] 2018-01-27 21:05:00,227 - Filtered duplicate request: <GET http://blog.jobbole.com/113343/>
+[WARNING] [2276] 2018-01-27 21:05:01,059 - time.sleep(1)
+[WARNING] [2276] 2018-01-27 21:05:01,190 - ---> exit_gracefully: signum=2 <---
+[WARNING] [2276] 2018-01-27 21:05:02,061 - time.sleep(1)
+[INFO] [2276] 2018-01-27 21:05:02,219 - next page url:http://blog.jobbole.com/all-posts/page/4/
+[DEBUG] [2276] 2018-01-27 21:05:02,221 - Filtered duplicate request: <GET http://blog.jobbole.com/113347/>
+[DEBUG] [2276] 2018-01-27 21:05:02,222 - Filtered duplicate request: <GET http://blog.jobbole.com/113339/>
+[DEBUG] [2276] 2018-01-27 21:05:02,222 - Filtered duplicate request: <GET http://blog.jobbole.com/112148/>
+[DEBUG] [2276] 2018-01-27 21:05:02,223 - Filtered duplicate request: <GET http://blog.jobbole.com/113333/>
+[DEBUG] [2276] 2018-01-27 21:05:02,223 - Filtered duplicate request: <GET http://blog.jobbole.com/113328/>
+[DEBUG] [2276] 2018-01-27 21:05:02,224 - Filtered duplicate request: <GET http://blog.jobbole.com/113230/>
+[DEBUG] [2276] 2018-01-27 21:05:02,224 - Filtered duplicate request: <GET http://blog.jobbole.com/113315/>
+[DEBUG] [2276] 2018-01-27 21:05:02,225 - Filtered duplicate request: <GET http://blog.jobbole.com/113312/>
+[DEBUG] [2276] 2018-01-27 21:05:02,225 - Filtered duplicate request: <GET http://blog.jobbole.com/113298/>
+[DEBUG] [2276] 2018-01-27 21:05:02,226 - Filtered duplicate request: <GET http://blog.jobbole.com/113310/>
+[DEBUG] [2276] 2018-01-27 21:05:02,227 - Filtered duplicate request: <GET http://blog.jobbole.com/113305/>
+[DEBUG] [2276] 2018-01-27 21:05:02,227 - Filtered duplicate request: <GET http://blog.jobbole.com/113301/>
+[DEBUG] [2276] 2018-01-27 21:05:02,228 - Filtered duplicate request: <GET http://blog.jobbole.com/113157/>
+[DEBUG] [2276] 2018-01-27 21:05:02,228 - Filtered duplicate request: <GET http://blog.jobbole.com/113146/>
+[DEBUG] [2276] 2018-01-27 21:05:02,229 - Filtered duplicate request: <GET http://blog.jobbole.com/113217/>
+[DEBUG] [2276] 2018-01-27 21:05:02,229 - Filtered duplicate request: <GET http://blog.jobbole.com/113277/>
+[DEBUG] [2276] 2018-01-27 21:05:02,230 - Filtered duplicate request: <GET http://blog.jobbole.com/113226/>
+[DEBUG] [2276] 2018-01-27 21:05:02,230 - Filtered duplicate request: <GET http://blog.jobbole.com/112809/>
+[DEBUG] [2276] 2018-01-27 21:05:02,231 - Filtered duplicate request: <GET http://blog.jobbole.com/113222/>
+[DEBUG] [2276] 2018-01-27 21:05:02,231 - Filtered duplicate request: <GET http://blog.jobbole.com/113210/>
+[WARNING] [2276] 2018-01-27 21:05:03,065 - ---------------> Wait all task done! <---------------
+[WARNING] [2276] 2018-01-27 21:05:04,066 - ---------------> Wait all task done! <---------------
+[INFO] [2276] 2018-01-27 21:05:04,138 - next page url:http://blog.jobbole.com/all-posts/page/5/
+[DEBUG] [2276] 2018-01-27 21:05:04,140 - Filtered duplicate request: <GET http://blog.jobbole.com/113174/>
+[DEBUG] [2276] 2018-01-27 21:05:04,140 - Filtered duplicate request: <GET http://blog.jobbole.com/113205/>
+[DEBUG] [2276] 2018-01-27 21:05:04,141 - Filtered duplicate request: <GET http://blog.jobbole.com/113203/>
+[DEBUG] [2276] 2018-01-27 21:05:04,142 - Filtered duplicate request: <GET http://blog.jobbole.com/113200/>
+[DEBUG] [2276] 2018-01-27 21:05:04,142 - Filtered duplicate request: <GET http://blog.jobbole.com/113197/>
+[DEBUG] [2276] 2018-01-27 21:05:04,143 - Filtered duplicate request: <GET http://blog.jobbole.com/113169/>
+[DEBUG] [2276] 2018-01-27 21:05:04,143 - Filtered duplicate request: <GET http://blog.jobbole.com/113180/>
+[DEBUG] [2276] 2018-01-27 21:05:04,144 - Filtered duplicate request: <GET http://blog.jobbole.com/112376/>
+[DEBUG] [2276] 2018-01-27 21:05:04,144 - Filtered duplicate request: <GET http://blog.jobbole.com/113186/>
+[DEBUG] [2276] 2018-01-27 21:05:04,145 - Filtered duplicate request: <GET http://blog.jobbole.com/113182/>
+[DEBUG] [2276] 2018-01-27 21:05:04,145 - Filtered duplicate request: <GET http://blog.jobbole.com/112724/>
+[DEBUG] [2276] 2018-01-27 21:05:04,146 - Filtered duplicate request: <GET http://blog.jobbole.com/113171/>
+[DEBUG] [2276] 2018-01-27 21:05:04,146 - Filtered duplicate request: <GET http://blog.jobbole.com/113153/>
+[DEBUG] [2276] 2018-01-27 21:05:04,147 - Filtered duplicate request: <GET http://blog.jobbole.com/113119/>
+[DEBUG] [2276] 2018-01-27 21:05:04,147 - Filtered duplicate request: <GET http://blog.jobbole.com/113166/>
+[DEBUG] [2276] 2018-01-27 21:05:04,148 - Filtered duplicate request: <GET http://blog.jobbole.com/113158/>
+[DEBUG] [2276] 2018-01-27 21:05:04,148 - Filtered duplicate request: <GET http://blog.jobbole.com/113147/>
+[DEBUG] [2276] 2018-01-27 21:05:04,149 - Filtered duplicate request: <GET http://blog.jobbole.com/113142/>
+[DEBUG] [2276] 2018-01-27 21:05:04,149 - Filtered duplicate request: <GET http://blog.jobbole.com/113120/>
+[DEBUG] [2276] 2018-01-27 21:05:04,150 - Filtered duplicate request: <GET http://blog.jobbole.com/112704/>
+[INFO] [2276] 2018-01-27 21:05:05,068 - ---------------> JobboleSpider: end <---------------
+[INFO] [2276] 2018-01-27 21:05:05,068 - ---------------> use time: 0:00:08.067536 <---------------
+[WARNING] [2290] 2018-01-27 21:06:48,738 - Resuming crawl (31 requests scheduled)
+[INFO] [2290] 2018-01-27 21:06:48,739 - ---------------> JobboleSpider: start <---------------
+[INFO] [2290] 2018-01-27 21:06:48,739 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [2290] 2018-01-27 21:06:48,740 - Using selector: EpollSelector
+[DEBUG] [2290] 2018-01-27 21:06:50,111 - ISO-8859-5 confidence = 0.0001969241493363301, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,150 - MacCyrillic confidence = 0.023379580120419432, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,260 - ISO-8859-7 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,289 - windows-1253 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,325 - ISO-8859-5 confidence = 0.00019110292710592677, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,355 - windows-1251 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,534 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,568 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [2290] 2018-01-27 21:06:50,662 - utf-8  confidence = 0.99
+[DEBUG] [2290] 2018-01-27 21:06:50,663 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,663 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,663 - GB2312 Chinese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,663 - EUC-KR Korean confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,663 - CP949 Korean confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,664 - Big5 Chinese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,664 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,664 - windows-1251 Russian confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,664 - KOI8-R Russian confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,664 - ISO-8859-5 not active
+[DEBUG] [2290] 2018-01-27 21:06:50,664 - MacCyrillic not active
+[DEBUG] [2290] 2018-01-27 21:06:50,664 - IBM866 Russian confidence = 0.08064261835884862
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - IBM855 Russian confidence = 0.05074237956988177
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - ISO-8859-7 not active
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - windows-1253 not active
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - ISO-8859-5 not active
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - windows-1251 not active
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - TIS-620 Thai confidence = 0.062037461404244
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - ISO-8859-9 Turkish confidence = 0.33441875554594475
+[DEBUG] [2290] 2018-01-27 21:06:50,665 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [2290] 2018-01-27 21:06:50,666 - windows-1255 not active
+[DEBUG] [2290] 2018-01-27 21:06:50,666 - windows-1255 not active
+[DEBUG] [2290] 2018-01-27 21:06:50,666 - utf-8  confidence = 0.99
+[DEBUG] [2290] 2018-01-27 21:06:50,666 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,666 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,666 - GB2312 Chinese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,666 - EUC-KR Korean confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,667 - CP949 Korean confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,667 - Big5 Chinese confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,667 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [2290] 2018-01-27 21:06:50,667 - http://blog.jobbole.com/113076/
+[DEBUG] [2290] 2018-01-27 21:06:50,673 - push item: {'title': 'Linux 内核学习经验总结', 'url': 'http://blog.jobbole.com/113076/'}
+[DEBUG] [2290] 2018-01-27 21:06:50,679 - http://blog.jobbole.com/113086/
+[DEBUG] [2290] 2018-01-27 21:06:50,697 - push item: {'title': 'Linux shell 中的那些小把戏', 'url': 'http://blog.jobbole.com/113086/'}
+[DEBUG] [2290] 2018-01-27 21:06:50,699 - http://blog.jobbole.com/113089/
+[DEBUG] [2290] 2018-01-27 21:06:50,704 - push item: {'title': '历史上第一位从事游戏开发与设计的女程序员', 'url': 'http://blog.jobbole.com/113089/'}
+[DEBUG] [2290] 2018-01-27 21:06:50,705 - http://blog.jobbole.com/113094/
+[DEBUG] [2290] 2018-01-27 21:06:50,721 - push item: {'title': 'netstat 的 10 个基本用法', 'url': 'http://blog.jobbole.com/113094/'}
+[DEBUG] [2290] 2018-01-27 21:06:50,773 - http://blog.jobbole.com/113083/
+[DEBUG] [2290] 2018-01-27 21:06:50,795 - push item: {'title': 'MySQL Binlog 事件介绍篇', 'url': 'http://blog.jobbole.com/113083/'}
+[DEBUG] [2290] 2018-01-27 21:06:51,729 - http://blog.jobbole.com/113073/
+[DEBUG] [2290] 2018-01-27 21:06:51,745 - push item: {'title': 'MySql Binlog 初识', 'url': 'http://blog.jobbole.com/113073/'}
+[DEBUG] [2290] 2018-01-27 21:06:51,782 - http://blog.jobbole.com/112280/
+[DEBUG] [2290] 2018-01-27 21:06:51,788 - push item: {'title': '程序员如何成为编程高手，并以此创业', 'url': 'http://blog.jobbole.com/112280/'}
+[DEBUG] [2290] 2018-01-27 21:06:51,791 - http://blog.jobbole.com/112854/
+[DEBUG] [2290] 2018-01-27 21:06:51,796 - push item: {'title': '合并请求的 10 个常见问题及建议', 'url': 'http://blog.jobbole.com/112854/'}
+[DEBUG] [2290] 2018-01-27 21:06:51,812 - http://blog.jobbole.com/112902/
+[DEBUG] [2290] 2018-01-27 21:06:51,817 - push item: {'title': '漫画：80 端口争夺战', 'url': 'http://blog.jobbole.com/112902/'}
+[INFO] [2290] 2018-01-27 21:06:51,855 - next page url:http://blog.jobbole.com/all-posts/page/8/
+[DEBUG] [2290] 2018-01-27 21:06:52,805 - http://blog.jobbole.com/112895/
+[DEBUG] [2290] 2018-01-27 21:06:52,816 - push item: {'title': 'MySQL 5.7 MGR 集群搭建', 'url': 'http://blog.jobbole.com/112895/'}
+[DEBUG] [2290] 2018-01-27 21:06:52,855 - http://blog.jobbole.com/112886/
+[DEBUG] [2290] 2018-01-27 21:06:52,861 - push item: {'title': '修复每个 bug 后都要问这 3 个问题', 'url': 'http://blog.jobbole.com/112886/'}
+[DEBUG] [2290] 2018-01-27 21:06:52,864 - http://blog.jobbole.com/112884/
+[DEBUG] [2290] 2018-01-27 21:06:52,869 - push item: {'title': '接到一个需求，想在页面上加一个链接', 'url': 'http://blog.jobbole.com/112884/'}
+[DEBUG] [2290] 2018-01-27 21:06:52,870 - http://blog.jobbole.com/112881/
+[DEBUG] [2290] 2018-01-27 21:06:52,875 - push item: {'title': '2017 最优秀的十大 Linux 服务器发行版', 'url': 'http://blog.jobbole.com/112881/'}
+[DEBUG] [2290] 2018-01-27 21:06:52,922 - http://blog.jobbole.com/112877/
+[DEBUG] [2290] 2018-01-27 21:06:52,929 - push item: {'title': '读懂 MySQL 执行计划', 'url': 'http://blog.jobbole.com/112877/'}
+[DEBUG] [2290] 2018-01-27 21:06:53,885 - http://blog.jobbole.com/112869/
+[DEBUG] [2290] 2018-01-27 21:06:53,892 - push item: {'title': 'QA 请勿忘初心', 'url': 'http://blog.jobbole.com/112869/'}
+[DEBUG] [2290] 2018-01-27 21:06:53,909 - http://blog.jobbole.com/112873/
+[DEBUG] [2290] 2018-01-27 21:06:53,915 - push item: {'title': '30 个实例详解 TOP 命令', 'url': 'http://blog.jobbole.com/112873/'}
+[DEBUG] [2290] 2018-01-27 21:06:53,942 - http://blog.jobbole.com/112863/
+[DEBUG] [2290] 2018-01-27 21:06:53,953 - push item: {'title': '10 个鲜为人知的 Linux 命令（5）', 'url': 'http://blog.jobbole.com/112863/'}
+[DEBUG] [2290] 2018-01-27 21:06:53,955 - http://blog.jobbole.com/112855/
+[DEBUG] [2290] 2018-01-27 21:06:53,960 - push item: {'title': '不懂技术的管理者，给你们扫盲软件开发的基本常识', 'url': 'http://blog.jobbole.com/112855/'}
+[DEBUG] [2290] 2018-01-27 21:06:53,994 - http://blog.jobbole.com/112603/
+[DEBUG] [2290] 2018-01-27 21:06:53,999 - push item: {'title': '开发者死后，他的开源项目会有人继续维护吗？', 'url': 'http://blog.jobbole.com/112603/'}
+[DEBUG] [2290] 2018-01-27 21:06:54,944 - http://blog.jobbole.com/112850/
+[DEBUG] [2290] 2018-01-27 21:06:54,955 - push item: {'title': '10 个鲜为人知的 Linux 命令（4）', 'url': 'http://blog.jobbole.com/112850/'}
+[DEBUG] [2290] 2018-01-27 21:06:54,964 - http://blog.jobbole.com/112847/
+[DEBUG] [2290] 2018-01-27 21:06:54,969 - push item: {'title': '分布式事务的一种实现方式--状态流转', 'url': 'http://blog.jobbole.com/112847/'}
+[DEBUG] [2290] 2018-01-27 21:06:55,004 - http://blog.jobbole.com/112836/
+[DEBUG] [2290] 2018-01-27 21:06:55,015 - push item: {'title': '10 个鲜为人知的 Linux 命令（3）', 'url': 'http://blog.jobbole.com/112836/'}
+[DEBUG] [2290] 2018-01-27 21:06:55,018 - http://blog.jobbole.com/112831/
+[DEBUG] [2290] 2018-01-27 21:06:55,023 - push item: {'title': '几乎毁掉谷歌吃豆人涂鸦游戏的 bug', 'url': 'http://blog.jobbole.com/112831/'}
+[DEBUG] [2290] 2018-01-27 21:06:55,221 - http://blog.jobbole.com/112842/
+[DEBUG] [2290] 2018-01-27 21:06:55,260 - push item: {'title': '如何遏制 PostgreSQL WAL 的疯狂增长', 'url': 'http://blog.jobbole.com/112842/'}
+[DEBUG] [2290] 2018-01-27 21:06:56,020 - http://blog.jobbole.com/112820/
+[DEBUG] [2290] 2018-01-27 21:06:56,031 - push item: {'title': '10 个鲜为人知的 Linux 命令（2）', 'url': 'http://blog.jobbole.com/112820/'}
+[DEBUG] [2290] 2018-01-27 21:06:56,033 - http://blog.jobbole.com/112832/
+[DEBUG] [2290] 2018-01-27 21:06:56,038 - push item: {'title': '2017 机器学习调查报告：Python 最火，R 极具潜力', 'url': 'http://blog.jobbole.com/112832/'}
+[DEBUG] [2290] 2018-01-27 21:06:56,083 - http://blog.jobbole.com/112828/
+[DEBUG] [2290] 2018-01-27 21:06:56,089 - push item: {'title': '你有学习者综合征吗？Web 开发是重灾区', 'url': 'http://blog.jobbole.com/112828/'}
+[DEBUG] [2290] 2018-01-27 21:06:56,118 - http://blog.jobbole.com/112812/
+[DEBUG] [2290] 2018-01-27 21:06:56,123 - push item: {'title': '23 个热门深度学习库的排名', 'url': 'http://blog.jobbole.com/112812/'}
+[DEBUG] [2290] 2018-01-27 21:06:56,310 - http://blog.jobbole.com/112817/
+[DEBUG] [2290] 2018-01-27 21:06:56,321 - push item: {'title': '11 个鲜为人知的 Linux 命令（1）', 'url': 'http://blog.jobbole.com/112817/'}
+[DEBUG] [2290] 2018-01-27 21:06:57,085 - http://blog.jobbole.com/112793/
+[DEBUG] [2290] 2018-01-27 21:06:57,092 - push item: {'title': '我如何在 17 天里得到 70 份面试', 'url': 'http://blog.jobbole.com/112793/'}
+[INFO] [2290] 2018-01-27 21:06:57,099 - next page url:http://blog.jobbole.com/all-posts/page/4/
+[DEBUG] [2290] 2018-01-27 21:06:57,101 - Filtered duplicate request: <GET http://blog.jobbole.com/113347/>
+[DEBUG] [2290] 2018-01-27 21:06:57,102 - Filtered duplicate request: <GET http://blog.jobbole.com/113339/>
+[DEBUG] [2290] 2018-01-27 21:06:57,102 - Filtered duplicate request: <GET http://blog.jobbole.com/112148/>
+[DEBUG] [2290] 2018-01-27 21:06:57,103 - Filtered duplicate request: <GET http://blog.jobbole.com/113333/>
+[DEBUG] [2290] 2018-01-27 21:06:57,103 - Filtered duplicate request: <GET http://blog.jobbole.com/113328/>
+[DEBUG] [2290] 2018-01-27 21:06:57,104 - Filtered duplicate request: <GET http://blog.jobbole.com/113230/>
+[DEBUG] [2290] 2018-01-27 21:06:57,104 - Filtered duplicate request: <GET http://blog.jobbole.com/113315/>
+[DEBUG] [2290] 2018-01-27 21:06:57,105 - Filtered duplicate request: <GET http://blog.jobbole.com/113312/>
+[DEBUG] [2290] 2018-01-27 21:06:57,105 - Filtered duplicate request: <GET http://blog.jobbole.com/113298/>
+[DEBUG] [2290] 2018-01-27 21:06:57,106 - Filtered duplicate request: <GET http://blog.jobbole.com/113310/>
+[DEBUG] [2290] 2018-01-27 21:06:57,107 - Filtered duplicate request: <GET http://blog.jobbole.com/113305/>
+[DEBUG] [2290] 2018-01-27 21:06:57,107 - Filtered duplicate request: <GET http://blog.jobbole.com/113301/>
+[DEBUG] [2290] 2018-01-27 21:06:57,107 - Filtered duplicate request: <GET http://blog.jobbole.com/113157/>
+[DEBUG] [2290] 2018-01-27 21:06:57,108 - Filtered duplicate request: <GET http://blog.jobbole.com/113146/>
+[DEBUG] [2290] 2018-01-27 21:06:57,108 - Filtered duplicate request: <GET http://blog.jobbole.com/113217/>
+[DEBUG] [2290] 2018-01-27 21:06:57,109 - Filtered duplicate request: <GET http://blog.jobbole.com/113277/>
+[DEBUG] [2290] 2018-01-27 21:06:57,109 - Filtered duplicate request: <GET http://blog.jobbole.com/113226/>
+[DEBUG] [2290] 2018-01-27 21:06:57,110 - Filtered duplicate request: <GET http://blog.jobbole.com/112809/>
+[DEBUG] [2290] 2018-01-27 21:06:57,110 - Filtered duplicate request: <GET http://blog.jobbole.com/113222/>
+[DEBUG] [2290] 2018-01-27 21:06:57,111 - Filtered duplicate request: <GET http://blog.jobbole.com/113210/>
+[DEBUG] [2290] 2018-01-27 21:06:57,164 - http://blog.jobbole.com/112783/
+[DEBUG] [2290] 2018-01-27 21:06:57,169 - push item: {'title': 'IT 工程师的自我管理', 'url': 'http://blog.jobbole.com/112783/'}
+[DEBUG] [2290] 2018-01-27 21:06:57,175 - http://blog.jobbole.com/112774/
+[DEBUG] [2290] 2018-01-27 21:06:57,180 - push item: {'title': '如何应对开源软件的版权牟利者？ 开源律师说这样做！', 'url': 'http://blog.jobbole.com/112774/'}
+[DEBUG] [2290] 2018-01-27 21:06:57,372 - http://blog.jobbole.com/112764/
+[DEBUG] [2290] 2018-01-27 21:06:57,378 - push item: {'title': 'Facebook 是如何做大规模代码部署的', 'url': 'http://blog.jobbole.com/112764/'}
+[DEBUG] [2290] 2018-01-27 21:06:58,143 - http://blog.jobbole.com/112760/
+[DEBUG] [2290] 2018-01-27 21:06:58,149 - push item: {'title': '从银行转账失败到分布式事务：总结与思考', 'url': 'http://blog.jobbole.com/112760/'}
+[DEBUG] [2290] 2018-01-27 21:06:58,160 - http://blog.jobbole.com/112753/
+[DEBUG] [2290] 2018-01-27 21:06:58,169 - push item: {'title': 'BFPRT 算法（TOP-K问题）', 'url': 'http://blog.jobbole.com/112753/'}
+[DEBUG] [2290] 2018-01-27 21:06:58,236 - http://blog.jobbole.com/112744/
+[DEBUG] [2290] 2018-01-27 21:06:58,241 - push item: {'title': '如何让网站不下线而从 Redis 2 迁移到 Redis 3', 'url': 'http://blog.jobbole.com/112744/'}
+[DEBUG] [2290] 2018-01-27 21:06:58,301 - http://blog.jobbole.com/112706/
+[DEBUG] [2290] 2018-01-27 21:06:58,307 - push item: {'title': '为什么我最喜欢的编程语言是 Go', 'url': 'http://blog.jobbole.com/112706/'}
+[DEBUG] [2290] 2018-01-27 21:06:58,452 - http://blog.jobbole.com/112726/
+[DEBUG] [2290] 2018-01-27 21:06:58,469 - push item: {'title': '如何让 Vim 成为我们的神器', 'url': 'http://blog.jobbole.com/112726/'}
+[DEBUG] [2290] 2018-01-27 21:06:59,197 - http://blog.jobbole.com/112705/
+[DEBUG] [2290] 2018-01-27 21:06:59,203 - push item: {'title': '如何在工作之余找精力做副项目？', 'url': 'http://blog.jobbole.com/112705/'}
+[DEBUG] [2290] 2018-01-27 21:06:59,216 - http://blog.jobbole.com/112716/
+[DEBUG] [2290] 2018-01-27 21:06:59,220 - push item: {'title': '若你要开源自己的代码，此文带你了解开源协议', 'url': 'http://blog.jobbole.com/112716/'}
+[DEBUG] [2290] 2018-01-27 21:06:59,293 - http://blog.jobbole.com/112713/
+[DEBUG] [2290] 2018-01-27 21:06:59,309 - push item: {'title': 'GitHub 的 MySQL 基础架构自动化测试', 'url': 'http://blog.jobbole.com/112713/'}
+[DEBUG] [2290] 2018-01-27 21:06:59,361 - http://blog.jobbole.com/112710/
+[DEBUG] [2290] 2018-01-27 21:06:59,371 - push item: {'title': 'RESTful API 设计最佳实践', 'url': 'http://blog.jobbole.com/112710/'}
+[DEBUG] [2290] 2018-01-27 21:06:59,537 - http://blog.jobbole.com/112707/
+[DEBUG] [2290] 2018-01-27 21:06:59,543 - push item: {'title': '如何在一个 U 盘上安装多个 Linux 发行版', 'url': 'http://blog.jobbole.com/112707/'}
+[DEBUG] [2290] 2018-01-27 21:07:00,251 - http://blog.jobbole.com/112617/
+[DEBUG] [2290] 2018-01-27 21:07:00,257 - push item: {'title': '用 Linux、Python 和树莓派酿制啤酒', 'url': 'http://blog.jobbole.com/112617/'}
+[DEBUG] [2290] 2018-01-27 21:07:00,267 - http://blog.jobbole.com/112614/
+[DEBUG] [2290] 2018-01-27 21:07:00,272 - push item: {'title': '为什么 SQL 正在击败 NoSQL，数据的未来是什么？', 'url': 'http://blog.jobbole.com/112614/'}
+[DEBUG] [2290] 2018-01-27 21:07:00,377 - http://blog.jobbole.com/112611/
+[DEBUG] [2290] 2018-01-27 21:07:00,383 - push item: {'title': '微服务进展缓慢的 5 个难点', 'url': 'http://blog.jobbole.com/112611/'}
+[DEBUG] [2290] 2018-01-27 21:07:00,420 - http://blog.jobbole.com/112588/
+[DEBUG] [2290] 2018-01-27 21:07:00,425 - push item: {'title': '我从编程写软件学到的 7 件事', 'url': 'http://blog.jobbole.com/112588/'}
+[DEBUG] [2290] 2018-01-27 21:07:00,592 - http://blog.jobbole.com/112597/
+[DEBUG] [2290] 2018-01-27 21:07:00,599 - push item: {'title': '详解 MySQL 基准测试和 sysbench 工具', 'url': 'http://blog.jobbole.com/112597/'}
+[DEBUG] [2290] 2018-01-27 21:07:01,318 - http://blog.jobbole.com/112589/
+[DEBUG] [2290] 2018-01-27 21:07:01,323 - push item: {'title': 'Adobe 软件的最佳 Linux 替代品', 'url': 'http://blog.jobbole.com/112589/'}
+[DEBUG] [2290] 2018-01-27 21:07:01,325 - http://blog.jobbole.com/112594/
+[DEBUG] [2290] 2018-01-27 21:07:01,330 - push item: {'title': '八款值得尝试的精美的 Linux 发行版（2017 版）', 'url': 'http://blog.jobbole.com/112594/'}
+[DEBUG] [2290] 2018-01-27 21:07:01,430 - http://blog.jobbole.com/112585/
+[DEBUG] [2290] 2018-01-27 21:07:01,438 - push item: {'title': '写代码容易，编程并不容易', 'url': 'http://blog.jobbole.com/112585/'}
+[DEBUG] [2290] 2018-01-27 21:07:01,483 - http://blog.jobbole.com/112583/
+[DEBUG] [2290] 2018-01-27 21:07:01,489 - push item: {'title': '你懂 Linux 吗？关于 Linux 你可能不是非常了解的七件事', 'url': 'http://blog.jobbole.com/112583/'}
+[DEBUG] [2290] 2018-01-27 21:07:01,650 - http://blog.jobbole.com/112580/
+[DEBUG] [2290] 2018-01-27 21:07:01,658 - push item: {'title': 'Linux 中 grep 命令的 12 个实践例子', 'url': 'http://blog.jobbole.com/112580/'}
+[DEBUG] [2290] 2018-01-27 21:07:02,381 - http://blog.jobbole.com/112569/
+[DEBUG] [2290] 2018-01-27 21:07:02,387 - push item: {'title': '机器学习实践指南', 'url': 'http://blog.jobbole.com/112569/'}
+[DEBUG] [2290] 2018-01-27 21:07:02,395 - http://blog.jobbole.com/112567/
+[DEBUG] [2290] 2018-01-27 21:07:02,400 - push item: {'title': '初创企业开源许可证管理九大法则', 'url': 'http://blog.jobbole.com/112567/'}
+[DEBUG] [2290] 2018-01-27 21:07:02,506 - http://blog.jobbole.com/112564/
+[DEBUG] [2290] 2018-01-27 21:07:02,512 - push item: {'title': '不要浪费时间写完美的代码', 'url': 'http://blog.jobbole.com/112564/'}
+[DEBUG] [2290] 2018-01-27 21:07:02,553 - http://blog.jobbole.com/112551/
+[DEBUG] [2290] 2018-01-27 21:07:02,560 - push item: {'title': '区块链原理最清晰最直观的解释', 'url': 'http://blog.jobbole.com/112551/'}
+[DEBUG] [2290] 2018-01-27 21:07:02,707 - http://blog.jobbole.com/112547/
+[DEBUG] [2290] 2018-01-27 21:07:02,714 - push item: {'title': '常用 GDB 命令中文速览', 'url': 'http://blog.jobbole.com/112547/'}
+[DEBUG] [2290] 2018-01-27 21:07:03,441 - http://blog.jobbole.com/112539/
+[DEBUG] [2290] 2018-01-27 21:07:03,447 - push item: {'title': '为什么招不到最好的程序员？SO 创始人有些建议', 'url': 'http://blog.jobbole.com/112539/'}
+[INFO] [2290] 2018-01-27 21:07:03,454 - next page url:http://blog.jobbole.com/all-posts/page/3/
+[DEBUG] [2290] 2018-01-27 21:07:03,456 - Filtered duplicate request: <GET http://blog.jobbole.com/113448/>
+[DEBUG] [2290] 2018-01-27 21:07:03,456 - Filtered duplicate request: <GET http://blog.jobbole.com/113443/>
+[DEBUG] [2290] 2018-01-27 21:07:03,457 - Filtered duplicate request: <GET http://blog.jobbole.com/113437/>
+[DEBUG] [2290] 2018-01-27 21:07:03,457 - Filtered duplicate request: <GET http://blog.jobbole.com/113429/>
+[DEBUG] [2290] 2018-01-27 21:07:03,458 - Filtered duplicate request: <GET http://blog.jobbole.com/113428/>
+[DEBUG] [2290] 2018-01-27 21:07:03,458 - Filtered duplicate request: <GET http://blog.jobbole.com/113422/>
+[DEBUG] [2290] 2018-01-27 21:07:03,459 - Filtered duplicate request: <GET http://blog.jobbole.com/113417/>
+[DEBUG] [2290] 2018-01-27 21:07:03,459 - Filtered duplicate request: <GET http://blog.jobbole.com/113413/>
+[DEBUG] [2290] 2018-01-27 21:07:03,460 - Filtered duplicate request: <GET http://blog.jobbole.com/113410/>
+[DEBUG] [2290] 2018-01-27 21:07:03,460 - Filtered duplicate request: <GET http://blog.jobbole.com/113401/>
+[DEBUG] [2290] 2018-01-27 21:07:03,460 - Filtered duplicate request: <GET http://blog.jobbole.com/113396/>
+[DEBUG] [2290] 2018-01-27 21:07:03,461 - Filtered duplicate request: <GET http://blog.jobbole.com/113215/>
+[DEBUG] [2290] 2018-01-27 21:07:03,461 - Filtered duplicate request: <GET http://blog.jobbole.com/113385/>
+[DEBUG] [2290] 2018-01-27 21:07:03,462 - Filtered duplicate request: <GET http://blog.jobbole.com/113367/>
+[DEBUG] [2290] 2018-01-27 21:07:03,462 - Filtered duplicate request: <GET http://blog.jobbole.com/113363/>
+[DEBUG] [2290] 2018-01-27 21:07:03,463 - Filtered duplicate request: <GET http://blog.jobbole.com/113361/>
+[DEBUG] [2290] 2018-01-27 21:07:03,463 - Filtered duplicate request: <GET http://blog.jobbole.com/113358/>
+[DEBUG] [2290] 2018-01-27 21:07:03,464 - Filtered duplicate request: <GET http://blog.jobbole.com/113355/>
+[DEBUG] [2290] 2018-01-27 21:07:03,464 - Filtered duplicate request: <GET http://blog.jobbole.com/113352/>
+[DEBUG] [2290] 2018-01-27 21:07:03,465 - Filtered duplicate request: <GET http://blog.jobbole.com/113343/>
+[INFO] [2290] 2018-01-27 21:07:03,589 - next page url:http://blog.jobbole.com/all-posts/page/4/
+[DEBUG] [2290] 2018-01-27 21:07:03,592 - Filtered duplicate request: <GET http://blog.jobbole.com/113347/>
+[DEBUG] [2290] 2018-01-27 21:07:03,592 - Filtered duplicate request: <GET http://blog.jobbole.com/113339/>
+[DEBUG] [2290] 2018-01-27 21:07:03,593 - Filtered duplicate request: <GET http://blog.jobbole.com/112148/>
+[DEBUG] [2290] 2018-01-27 21:07:03,593 - Filtered duplicate request: <GET http://blog.jobbole.com/113333/>
+[DEBUG] [2290] 2018-01-27 21:07:03,594 - Filtered duplicate request: <GET http://blog.jobbole.com/113328/>
+[DEBUG] [2290] 2018-01-27 21:07:03,594 - Filtered duplicate request: <GET http://blog.jobbole.com/113230/>
+[DEBUG] [2290] 2018-01-27 21:07:03,595 - Filtered duplicate request: <GET http://blog.jobbole.com/113315/>
+[DEBUG] [2290] 2018-01-27 21:07:03,595 - Filtered duplicate request: <GET http://blog.jobbole.com/113312/>
+[DEBUG] [2290] 2018-01-27 21:07:03,596 - Filtered duplicate request: <GET http://blog.jobbole.com/113298/>
+[DEBUG] [2290] 2018-01-27 21:07:03,596 - Filtered duplicate request: <GET http://blog.jobbole.com/113310/>
+[DEBUG] [2290] 2018-01-27 21:07:03,597 - Filtered duplicate request: <GET http://blog.jobbole.com/113305/>
+[DEBUG] [2290] 2018-01-27 21:07:03,597 - Filtered duplicate request: <GET http://blog.jobbole.com/113301/>
+[DEBUG] [2290] 2018-01-27 21:07:03,598 - Filtered duplicate request: <GET http://blog.jobbole.com/113157/>
+[DEBUG] [2290] 2018-01-27 21:07:03,598 - Filtered duplicate request: <GET http://blog.jobbole.com/113146/>
+[DEBUG] [2290] 2018-01-27 21:07:03,599 - Filtered duplicate request: <GET http://blog.jobbole.com/113217/>
+[DEBUG] [2290] 2018-01-27 21:07:03,599 - Filtered duplicate request: <GET http://blog.jobbole.com/113277/>
+[DEBUG] [2290] 2018-01-27 21:07:03,599 - Filtered duplicate request: <GET http://blog.jobbole.com/113226/>
+[DEBUG] [2290] 2018-01-27 21:07:03,600 - Filtered duplicate request: <GET http://blog.jobbole.com/112809/>
+[DEBUG] [2290] 2018-01-27 21:07:03,600 - Filtered duplicate request: <GET http://blog.jobbole.com/113222/>
+[DEBUG] [2290] 2018-01-27 21:07:03,601 - Filtered duplicate request: <GET http://blog.jobbole.com/113210/>
+[DEBUG] [2290] 2018-01-27 21:07:03,611 - http://blog.jobbole.com/112541/
+[DEBUG] [2290] 2018-01-27 21:07:03,616 - push item: {'title': '2017 全栈开发人员修炼指南', 'url': 'http://blog.jobbole.com/112541/'}
+[DEBUG] [2290] 2018-01-27 21:07:03,765 - http://blog.jobbole.com/112535/
+[DEBUG] [2290] 2018-01-27 21:07:03,776 - push item: {'title': 'di：比 df 更有用的磁盘信息工具', 'url': 'http://blog.jobbole.com/112535/'}
+[DEBUG] [2290] 2018-01-27 21:07:04,500 - http://blog.jobbole.com/112218/
+[DEBUG] [2290] 2018-01-27 21:07:04,510 - push item: {'title': '每周 70+ 小时，吴恩达的招人要求之一', 'url': 'http://blog.jobbole.com/112218/'}
+[DEBUG] [2290] 2018-01-27 21:07:04,532 - http://blog.jobbole.com/112486/
+[DEBUG] [2290] 2018-01-27 21:07:04,540 - push item: {'title': '自上而下，逐步揭开 PHP 解析大整数的面纱', 'url': 'http://blog.jobbole.com/112486/'}
+[DEBUG] [2290] 2018-01-27 21:07:04,647 - http://blog.jobbole.com/112517/
+[DEBUG] [2290] 2018-01-27 21:07:04,652 - push item: {'title': 'Linux 大爆炸：一个内核，无数发行版', 'url': 'http://blog.jobbole.com/112517/'}
+[DEBUG] [2290] 2018-01-27 21:07:04,666 - http://blog.jobbole.com/112499/
+[DEBUG] [2290] 2018-01-27 21:07:04,672 - push item: {'title': '为什么 Python 增长如此之快？', 'url': 'http://blog.jobbole.com/112499/'}
+[DEBUG] [2290] 2018-01-27 21:07:04,825 - http://blog.jobbole.com/112494/
+[DEBUG] [2290] 2018-01-27 21:07:04,830 - push item: {'title': 'Linux 26 周年，来一场怀旧之旅', 'url': 'http://blog.jobbole.com/112494/'}
+[DEBUG] [2290] 2018-01-27 21:07:05,556 - http://blog.jobbole.com/112474/
+[DEBUG] [2290] 2018-01-27 21:07:05,561 - push item: {'title': '每个程序员都该知道的五大定律', 'url': 'http://blog.jobbole.com/112474/'}
+[DEBUG] [2290] 2018-01-27 21:07:05,640 - http://blog.jobbole.com/112473/
+[DEBUG] [2290] 2018-01-27 21:07:05,646 - push item: {'title': '惊叹！这个盲人程序员是这样写代码的', 'url': 'http://blog.jobbole.com/112473/'}
+[DEBUG] [2290] 2018-01-27 21:07:05,701 - http://blog.jobbole.com/112479/
+[DEBUG] [2290] 2018-01-27 21:07:05,710 - push item: {'title': '漫谈传统的 Linux 初始化系统的运行级别', 'url': 'http://blog.jobbole.com/112479/'}
+[DEBUG] [2290] 2018-01-27 21:07:05,742 - http://blog.jobbole.com/112469/
+[DEBUG] [2290] 2018-01-27 21:07:05,754 - push item: {'title': 'HttpClient 获取 Cookie 的一次踩坑实录', 'url': 'http://blog.jobbole.com/112469/'}
+[DEBUG] [2290] 2018-01-27 21:07:05,900 - http://blog.jobbole.com/112466/
+[DEBUG] [2290] 2018-01-27 21:07:05,905 - push item: {'title': '数据异构的武器-BINLOG+MQ', 'url': 'http://blog.jobbole.com/112466/'}
+[DEBUG] [2290] 2018-01-27 21:07:06,611 - http://blog.jobbole.com/112321/
+[DEBUG] [2290] 2018-01-27 21:07:06,621 - push item: {'title': '为提高用户体验，Yelp 是如何无损压缩图片的', 'url': 'http://blog.jobbole.com/112321/'}
+[INFO] [2290] 2018-01-27 21:07:06,701 - next page url:http://blog.jobbole.com/all-posts/page/12/
+[DEBUG] [2290] 2018-01-27 21:07:06,761 - http://blog.jobbole.com/112322/
+[DEBUG] [2290] 2018-01-27 21:07:06,767 - push item: {'title': '技术面试中常被问到是否参与开源，那如何清晰展示 GitHub 项目呢？', 'url': 'http://blog.jobbole.com/112322/'}
+[DEBUG] [2290] 2018-01-27 21:07:06,803 - http://blog.jobbole.com/112320/
+[DEBUG] [2290] 2018-01-27 21:07:06,808 - push item: {'title': '100:10:1方法 : 我是这样参与开源的', 'url': 'http://blog.jobbole.com/112320/'}
+[DEBUG] [2290] 2018-01-27 21:07:06,953 - http://blog.jobbole.com/112384/
+[DEBUG] [2290] 2018-01-27 21:07:06,962 - push item: {'title': 'Linux 系统开机启动项清理', 'url': 'http://blog.jobbole.com/112384/'}
+[DEBUG] [2290] 2018-01-27 21:07:07,718 - http://blog.jobbole.com/112381/
+[DEBUG] [2290] 2018-01-27 21:07:07,729 - push item: {'title': '基于 Redis 实现分布式应用限流', 'url': 'http://blog.jobbole.com/112381/'}
+[DEBUG] [2290] 2018-01-27 21:07:07,809 - http://blog.jobbole.com/112366/
+[DEBUG] [2290] 2018-01-27 21:07:07,815 - push item: {'title': 'MySQL 创始人：写代码比打游戏还爽，程序员应该多泡开源社区', 'url': 'http://blog.jobbole.com/112366/'}
+[DEBUG] [2290] 2018-01-27 21:07:07,826 - http://blog.jobbole.com/112358/
+[DEBUG] [2290] 2018-01-27 21:07:07,840 - push item: {'title': '使用 Redis 解决“树”形数据的复杂查询', 'url': 'http://blog.jobbole.com/112358/'}
+[DEBUG] [2290] 2018-01-27 21:07:07,875 - http://blog.jobbole.com/112351/
+[DEBUG] [2290] 2018-01-27 21:07:07,881 - push item: {'title': '程序员的技术选择：发达国家和发展中国家有这些差异', 'url': 'http://blog.jobbole.com/112351/'}
+[DEBUG] [2290] 2018-01-27 21:07:08,076 - http://blog.jobbole.com/112339/
+[DEBUG] [2290] 2018-01-27 21:07:08,093 - push item: {'title': '树形结构数据存储方案（五）：区间嵌套', 'url': 'http://blog.jobbole.com/112339/'}
+[DEBUG] [2290] 2018-01-27 21:07:08,778 - http://blog.jobbole.com/112344/
+[DEBUG] [2290] 2018-01-27 21:07:08,784 - push item: {'title': 'Linux 系统上的可视化比较与合并工具 Meld', 'url': 'http://blog.jobbole.com/112344/'}
+[DEBUG] [2290] 2018-01-27 21:07:08,872 - http://blog.jobbole.com/112327/
+[DEBUG] [2290] 2018-01-27 21:07:08,878 - push item: {'title': '颜值即正义，超好用的 Linux 桌面个性化工具推荐', 'url': 'http://blog.jobbole.com/112327/'}
+[DEBUG] [2290] 2018-01-27 21:07:08,889 - http://blog.jobbole.com/112312/
+[DEBUG] [2290] 2018-01-27 21:07:08,896 - push item: {'title': '树形结构数据存储方案（二）： 物化路径', 'url': 'http://blog.jobbole.com/112312/'}
+[DEBUG] [2290] 2018-01-27 21:07:08,932 - http://blog.jobbole.com/112306/
+[DEBUG] [2290] 2018-01-27 21:07:08,947 - push item: {'title': '六个优雅的 Linux 命令行技巧', 'url': 'http://blog.jobbole.com/112306/'}
+[INFO] [2290] 2018-01-27 21:07:09,166 - next page url:http://blog.jobbole.com/all-posts/page/6/
+[DEBUG] [2290] 2018-01-27 21:07:09,168 - Filtered duplicate request: <GET http://blog.jobbole.com/113133/>
+[DEBUG] [2290] 2018-01-27 21:07:09,169 - Filtered duplicate request: <GET http://blog.jobbole.com/113130/>
+[DEBUG] [2290] 2018-01-27 21:07:09,169 - Filtered duplicate request: <GET http://blog.jobbole.com/113127/>
+[DEBUG] [2290] 2018-01-27 21:07:09,170 - Filtered duplicate request: <GET http://blog.jobbole.com/113099/>
+[DEBUG] [2290] 2018-01-27 21:07:09,170 - Filtered duplicate request: <GET http://blog.jobbole.com/113114/>
+[DEBUG] [2290] 2018-01-27 21:07:09,171 - Filtered duplicate request: <GET http://blog.jobbole.com/113109/>
+[DEBUG] [2290] 2018-01-27 21:07:09,171 - Filtered duplicate request: <GET http://blog.jobbole.com/113082/>
+[DEBUG] [2290] 2018-01-27 21:07:09,172 - Filtered duplicate request: <GET http://blog.jobbole.com/113079/>
+[DEBUG] [2290] 2018-01-27 21:07:09,172 - Filtered duplicate request: <GET http://blog.jobbole.com/112739/>
+[DEBUG] [2290] 2018-01-27 21:07:09,173 - Filtered duplicate request: <GET http://blog.jobbole.com/113100/>
+[DEBUG] [2290] 2018-01-27 21:07:09,173 - Filtered duplicate request: <GET http://blog.jobbole.com/113097/>
+[DEBUG] [2290] 2018-01-27 21:07:09,174 - Filtered duplicate request: <GET http://blog.jobbole.com/113094/>
+[DEBUG] [2290] 2018-01-27 21:07:09,174 - Filtered duplicate request: <GET http://blog.jobbole.com/113089/>
+[DEBUG] [2290] 2018-01-27 21:07:09,175 - Filtered duplicate request: <GET http://blog.jobbole.com/113086/>
+[DEBUG] [2290] 2018-01-27 21:07:09,175 - Filtered duplicate request: <GET http://blog.jobbole.com/113083/>
+[DEBUG] [2290] 2018-01-27 21:07:09,175 - Filtered duplicate request: <GET http://blog.jobbole.com/113076/>
+[DEBUG] [2290] 2018-01-27 21:07:09,176 - Filtered duplicate request: <GET http://blog.jobbole.com/113073/>
+[DEBUG] [2290] 2018-01-27 21:07:09,176 - Filtered duplicate request: <GET http://blog.jobbole.com/112854/>
+[DEBUG] [2290] 2018-01-27 21:07:09,177 - Filtered duplicate request: <GET http://blog.jobbole.com/112280/>
+[DEBUG] [2290] 2018-01-27 21:07:09,177 - Filtered duplicate request: <GET http://blog.jobbole.com/112902/>
+[DEBUG] [2290] 2018-01-27 21:07:09,835 - http://blog.jobbole.com/112303/
+[DEBUG] [2290] 2018-01-27 21:07:09,845 - push item: {'title': '在 Linux 中分割和重组文件', 'url': 'http://blog.jobbole.com/112303/'}
+[DEBUG] [2290] 2018-01-27 21:07:09,927 - http://blog.jobbole.com/112288/
+[DEBUG] [2290] 2018-01-27 21:07:09,935 - push item: {'title': '11 个超酷的编程新工具', 'url': 'http://blog.jobbole.com/112288/'}
+[DEBUG] [2290] 2018-01-27 21:07:09,949 - http://blog.jobbole.com/112285/
+[DEBUG] [2290] 2018-01-27 21:07:09,965 - push item: {'title': '全文搜索引擎 Elasticsearch 入门教程', 'url': 'http://blog.jobbole.com/112285/'}
+[DEBUG] [2290] 2018-01-27 21:07:10,021 - http://blog.jobbole.com/112277/
+[DEBUG] [2290] 2018-01-27 21:07:10,027 - push item: {'title': 'Linux 开机引导和启动过程详解', 'url': 'http://blog.jobbole.com/112277/'}
+[DEBUG] [2290] 2018-01-27 21:07:10,273 - http://blog.jobbole.com/112268/
+[DEBUG] [2290] 2018-01-27 21:07:10,279 - push item: {'title': '一个时代的结束：Solaris 系统的那些年，那些事', 'url': 'http://blog.jobbole.com/112268/'}
+[DEBUG] [2290] 2018-01-27 21:07:10,897 - http://blog.jobbole.com/112243/
+[DEBUG] [2290] 2018-01-27 21:07:10,903 - push item: {'title': '一文了解 Kubernetes 是什么？', 'url': 'http://blog.jobbole.com/112243/'}
+[DEBUG] [2290] 2018-01-27 21:07:10,989 - http://blog.jobbole.com/112237/
+[DEBUG] [2290] 2018-01-27 21:07:10,995 - push item: {'title': 'DevOps 团队之殇', 'url': 'http://blog.jobbole.com/112237/'}
+[DEBUG] [2290] 2018-01-27 21:07:11,016 - http://blog.jobbole.com/112233/
+[DEBUG] [2290] 2018-01-27 21:07:11,022 - push item: {'title': 'Zookeeper，你可把我坑惨了！', 'url': 'http://blog.jobbole.com/112233/'}
+[DEBUG] [2290] 2018-01-27 21:07:11,078 - http://blog.jobbole.com/112224/
+[DEBUG] [2290] 2018-01-27 21:07:11,085 - push item: {'title': 'Nginx 缓存引发的跨域惨案', 'url': 'http://blog.jobbole.com/112224/'}
+[DEBUG] [2290] 2018-01-27 21:07:11,329 - http://blog.jobbole.com/112222/
+[DEBUG] [2290] 2018-01-27 21:07:11,335 - push item: {'title': '从分布式计算到分布式训练', 'url': 'http://blog.jobbole.com/112222/'}
+[DEBUG] [2290] 2018-01-27 21:07:11,974 - http://blog.jobbole.com/112214/
+[DEBUG] [2290] 2018-01-27 21:07:12,015 - push item: {'title': 'PHP实现定时任务（非linux-shell方式，与操作系统无关）', 'url': 'http://blog.jobbole.com/112214/'}
+[INFO] [2290] 2018-01-27 21:07:12,072 - next page url:http://blog.jobbole.com/all-posts/page/8/
+[DEBUG] [2290] 2018-01-27 21:07:12,074 - Filtered duplicate request: <GET http://blog.jobbole.com/112801/>
+[DEBUG] [2290] 2018-01-27 21:07:12,074 - Filtered duplicate request: <GET http://blog.jobbole.com/112793/>
+[DEBUG] [2290] 2018-01-27 21:07:12,075 - Filtered duplicate request: <GET http://blog.jobbole.com/112783/>
+[DEBUG] [2290] 2018-01-27 21:07:12,075 - Filtered duplicate request: <GET http://blog.jobbole.com/112777/>
+[DEBUG] [2290] 2018-01-27 21:07:12,076 - Filtered duplicate request: <GET http://blog.jobbole.com/112778/>
+[DEBUG] [2290] 2018-01-27 21:07:12,076 - Filtered duplicate request: <GET http://blog.jobbole.com/112779/>
+[DEBUG] [2290] 2018-01-27 21:07:12,077 - Filtered duplicate request: <GET http://blog.jobbole.com/112774/>
+[DEBUG] [2290] 2018-01-27 21:07:12,077 - Filtered duplicate request: <GET http://blog.jobbole.com/112764/>
+[DEBUG] [2290] 2018-01-27 21:07:12,078 - Filtered duplicate request: <GET http://blog.jobbole.com/112760/>
+[DEBUG] [2290] 2018-01-27 21:07:12,078 - Filtered duplicate request: <GET http://blog.jobbole.com/112753/>
+[DEBUG] [2290] 2018-01-27 21:07:12,079 - Filtered duplicate request: <GET http://blog.jobbole.com/112744/>
+[DEBUG] [2290] 2018-01-27 21:07:12,079 - Filtered duplicate request: <GET http://blog.jobbole.com/112706/>
+[DEBUG] [2290] 2018-01-27 21:07:12,080 - Filtered duplicate request: <GET http://blog.jobbole.com/112726/>
+[DEBUG] [2290] 2018-01-27 21:07:12,080 - Filtered duplicate request: <GET http://blog.jobbole.com/112705/>
+[DEBUG] [2290] 2018-01-27 21:07:12,081 - Filtered duplicate request: <GET http://blog.jobbole.com/112718/>
+[DEBUG] [2290] 2018-01-27 21:07:12,081 - Filtered duplicate request: <GET http://blog.jobbole.com/112716/>
+[DEBUG] [2290] 2018-01-27 21:07:12,082 - Filtered duplicate request: <GET http://blog.jobbole.com/112713/>
+[DEBUG] [2290] 2018-01-27 21:07:12,082 - Filtered duplicate request: <GET http://blog.jobbole.com/112710/>
+[DEBUG] [2290] 2018-01-27 21:07:12,083 - Filtered duplicate request: <GET http://blog.jobbole.com/112707/>
+[DEBUG] [2290] 2018-01-27 21:07:12,083 - Filtered duplicate request: <GET http://blog.jobbole.com/112617/>
+[INFO] [2290] 2018-01-27 21:07:12,091 - next page url:http://blog.jobbole.com/all-posts/page/7/
+[DEBUG] [2290] 2018-01-27 21:07:12,093 - Filtered duplicate request: <GET http://blog.jobbole.com/112895/>
+[DEBUG] [2290] 2018-01-27 21:07:12,094 - Filtered duplicate request: <GET http://blog.jobbole.com/112884/>
+[DEBUG] [2290] 2018-01-27 21:07:12,094 - Filtered duplicate request: <GET http://blog.jobbole.com/112886/>
+[DEBUG] [2290] 2018-01-27 21:07:12,095 - Filtered duplicate request: <GET http://blog.jobbole.com/112881/>
+[DEBUG] [2290] 2018-01-27 21:07:12,095 - Filtered duplicate request: <GET http://blog.jobbole.com/112877/>
+[DEBUG] [2290] 2018-01-27 21:07:12,095 - Filtered duplicate request: <GET http://blog.jobbole.com/112869/>
+[DEBUG] [2290] 2018-01-27 21:07:12,096 - Filtered duplicate request: <GET http://blog.jobbole.com/112873/>
+[DEBUG] [2290] 2018-01-27 21:07:12,096 - Filtered duplicate request: <GET http://blog.jobbole.com/112863/>
+[DEBUG] [2290] 2018-01-27 21:07:12,097 - Filtered duplicate request: <GET http://blog.jobbole.com/112855/>
+[DEBUG] [2290] 2018-01-27 21:07:12,097 - Filtered duplicate request: <GET http://blog.jobbole.com/112603/>
+[DEBUG] [2290] 2018-01-27 21:07:12,098 - Filtered duplicate request: <GET http://blog.jobbole.com/112850/>
+[DEBUG] [2290] 2018-01-27 21:07:12,099 - Filtered duplicate request: <GET http://blog.jobbole.com/112847/>
+[DEBUG] [2290] 2018-01-27 21:07:12,099 - Filtered duplicate request: <GET http://blog.jobbole.com/112836/>
+[DEBUG] [2290] 2018-01-27 21:07:12,099 - Filtered duplicate request: <GET http://blog.jobbole.com/112831/>
+[DEBUG] [2290] 2018-01-27 21:07:12,100 - Filtered duplicate request: <GET http://blog.jobbole.com/112842/>
+[DEBUG] [2290] 2018-01-27 21:07:12,100 - Filtered duplicate request: <GET http://blog.jobbole.com/112832/>
+[DEBUG] [2290] 2018-01-27 21:07:12,101 - Filtered duplicate request: <GET http://blog.jobbole.com/112820/>
+[DEBUG] [2290] 2018-01-27 21:07:12,101 - Filtered duplicate request: <GET http://blog.jobbole.com/112828/>
+[DEBUG] [2290] 2018-01-27 21:07:12,102 - Filtered duplicate request: <GET http://blog.jobbole.com/112812/>
+[DEBUG] [2290] 2018-01-27 21:07:12,102 - Filtered duplicate request: <GET http://blog.jobbole.com/112817/>
+[INFO] [2290] 2018-01-27 21:07:12,174 - next page url:http://blog.jobbole.com/all-posts/page/14/
+[WARNING] [2290] 2018-01-27 21:07:12,190 - ---> exit_gracefully: signum=2 <---
+[DEBUG] [2290] 2018-01-27 21:07:12,387 - http://blog.jobbole.com/112185/
+[DEBUG] [2290] 2018-01-27 21:07:12,394 - push item: {'title': '150 多个 ML、NLP 和 Python 相关的教程', 'url': 'http://blog.jobbole.com/112185/'}
+[WARNING] [2290] 2018-01-27 21:07:12,396 - ---------------> Wait all task done! <---------------
+[DEBUG] [2290] 2018-01-27 21:07:13,065 - http://blog.jobbole.com/112189/
+[DEBUG] [2290] 2018-01-27 21:07:13,071 - push item: {'title': 'CoreOS，一款 Linux 容器发行版', 'url': 'http://blog.jobbole.com/112189/'}
+[DEBUG] [2290] 2018-01-27 21:07:13,134 - http://blog.jobbole.com/112126/
+[DEBUG] [2290] 2018-01-27 21:07:13,148 - push item: {'title': '用 C 语言写一个简单的 Unix Shell（2）', 'url': 'http://blog.jobbole.com/112126/'}
+[DEBUG] [2290] 2018-01-27 21:07:13,151 - http://blog.jobbole.com/112121/
+[DEBUG] [2290] 2018-01-27 21:07:13,159 - push item: {'title': '文件系统层次标准（FHS）简介', 'url': 'http://blog.jobbole.com/112121/'}
+[DEBUG] [2290] 2018-01-27 21:07:13,241 - http://blog.jobbole.com/112071/
+[DEBUG] [2290] 2018-01-27 21:07:13,249 - push item: {'title': '什么是现代化编程？', 'url': 'http://blog.jobbole.com/112071/'}
+[WARNING] [2290] 2018-01-27 21:07:13,397 - ---------------> Wait all task done! <---------------
+[DEBUG] [2290] 2018-01-27 21:07:13,461 - http://blog.jobbole.com/112115/
+[DEBUG] [2290] 2018-01-27 21:07:13,468 - push item: {'title': '从集装箱历史看 DevOps 的发展进程', 'url': 'http://blog.jobbole.com/112115/'}
+[INFO] [2290] 2018-01-27 21:07:14,400 - ---------------> JobboleSpider: end <---------------
+[INFO] [2290] 2018-01-27 21:07:14,400 - ---------------> use time: 0:00:25.659620 <---------------

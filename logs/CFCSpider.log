@@ -1,0 +1,416 @@
+[INFO] [37772] 2018-01-27 16:13:28,211 - ---------------> CFCSpider: start <---------------
+[INFO] [37772] 2018-01-27 16:13:28,212 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [37772] 2018-01-27 16:13:28,239 - Using selector: SelectSelector
+[WARNING] [37772] 2018-01-27 16:13:28,293 - time.sleep(1)
+[WARNING] [37772] 2018-01-27 16:13:29,320 - time.sleep(1)
+[DEBUG] [37772] 2018-01-27 16:13:29,841 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:29,865 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:29,916 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:29,976 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:30,166 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:30,187 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:30,285 - utf-8  confidence = 0.99
+[DEBUG] [37772] 2018-01-27 16:13:30,285 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,286 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,286 - GB2312 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,286 - EUC-KR Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,286 - CP949 Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,286 - Big5 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,286 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - windows-1251 Russian confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - KOI8-R Russian confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - ISO-8859-5 not active
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - MacCyrillic not active
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - IBM855 not active
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:30,287 - windows-1253 Greek confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:30,288 - ISO-8859-5 not active
+[DEBUG] [37772] 2018-01-27 16:13:30,288 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:30,288 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [37772] 2018-01-27 16:13:30,288 - ISO-8859-9 Turkish confidence = 0.413790912497208
+[DEBUG] [37772] 2018-01-27 16:13:30,288 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:30,288 - windows-1255 not active
+[DEBUG] [37772] 2018-01-27 16:13:30,288 - windows-1255 not active
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - utf-8  confidence = 0.99
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - GB2312 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - EUC-KR Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - CP949 Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - Big5 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:30,289 - EUC-TW Taiwan confidence = 0.01
+[WARNING] [37772] 2018-01-27 16:13:30,370 - time.sleep(1)
+[WARNING] [37772] 2018-01-27 16:13:31,396 - time.sleep(1)
+[DEBUG] [37772] 2018-01-27 16:13:31,732 - MacCyrillic confidence = 0.034145904162378275, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:31,766 - ISO-8859-5 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [37772] 2018-01-27 16:13:31,843 - utf-8  confidence = 0.99
+[DEBUG] [37772] 2018-01-27 16:13:31,843 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,844 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,844 - GB2312 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,844 - EUC-KR Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,844 - CP949 Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,844 - Big5 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,844 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,844 - windows-1251 Russian confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,845 - KOI8-R Russian confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,845 - ISO-8859-5 Russian confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:31,845 - MacCyrillic not active
+[DEBUG] [37772] 2018-01-27 16:13:31,845 - IBM866 Russian confidence = 0.06191345903914682
+[DEBUG] [37772] 2018-01-27 16:13:31,845 - IBM855 Russian confidence = 0.07469278386886713
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - windows-1253 Greek confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - ISO-8859-5 not active
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - TIS-620 Thai confidence = 0.02400604183441233
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - ISO-8859-9 Turkish confidence = 0.4352347215095164
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:31,846 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:31,847 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [37772] 2018-01-27 16:13:31,847 - utf-8  confidence = 0.99
+[DEBUG] [37772] 2018-01-27 16:13:31,847 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,847 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,847 - GB2312 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,848 - EUC-KR Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,848 - CP949 Korean confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,848 - Big5 Chinese confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,848 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [37772] 2018-01-27 16:13:31,848 - http://data.foundationcenter.org.cn/NewFTI/GetFDOPagedFoundation.ashx
+[WARNING] [37772] 2018-01-27 16:13:32,424 - time.sleep(1)
+[WARNING] [37772] 2018-01-27 16:13:33,449 - time.sleep(1)
+[WARNING] [37772] 2018-01-27 16:13:34,474 - time.sleep(1)
+[WARNING] [37772] 2018-01-27 16:13:35,500 - time.sleep(1)
+[WARNING] [37772] 2018-01-27 16:13:36,526 - time.sleep(1)
+[INFO] [35420] 2018-01-27 16:15:24,089 - ---------------> CFCSpider: start <---------------
+[INFO] [35420] 2018-01-27 16:15:24,089 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [35420] 2018-01-27 16:15:24,118 - Using selector: SelectSelector
+[WARNING] [35420] 2018-01-27 16:15:24,177 - time.sleep(1)
+[WARNING] [35420] 2018-01-27 16:15:25,207 - time.sleep(1)
+[DEBUG] [35420] 2018-01-27 16:15:26,073 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:26,097 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:26,147 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:26,205 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:26,394 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:26,414 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:26,509 - utf-8  confidence = 0.99
+[DEBUG] [35420] 2018-01-27 16:15:26,509 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,510 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,510 - GB2312 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,510 - EUC-KR Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,510 - CP949 Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,510 - Big5 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,510 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,510 - windows-1251 Russian confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,511 - KOI8-R Russian confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,511 - ISO-8859-5 not active
+[DEBUG] [35420] 2018-01-27 16:15:26,511 - MacCyrillic not active
+[DEBUG] [35420] 2018-01-27 16:15:26,511 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [35420] 2018-01-27 16:15:26,511 - IBM855 not active
+[DEBUG] [35420] 2018-01-27 16:15:26,511 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:26,512 - windows-1253 Greek confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:26,512 - ISO-8859-5 not active
+[DEBUG] [35420] 2018-01-27 16:15:26,512 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:26,512 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [35420] 2018-01-27 16:15:26,512 - ISO-8859-9 Turkish confidence = 0.413790912497208
+[DEBUG] [35420] 2018-01-27 16:15:26,512 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:26,512 - windows-1255 not active
+[DEBUG] [35420] 2018-01-27 16:15:26,513 - windows-1255 not active
+[DEBUG] [35420] 2018-01-27 16:15:26,513 - utf-8  confidence = 0.99
+[DEBUG] [35420] 2018-01-27 16:15:26,513 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,513 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,513 - GB2312 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,513 - EUC-KR Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,513 - CP949 Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,514 - Big5 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:26,514 - EUC-TW Taiwan confidence = 0.01
+[WARNING] [35420] 2018-01-27 16:15:26,600 - time.sleep(1)
+[WARNING] [35420] 2018-01-27 16:15:27,629 - time.sleep(1)
+[DEBUG] [35420] 2018-01-27 16:15:27,934 - MacCyrillic confidence = 0.034145904162378275, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:27,969 - ISO-8859-5 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [35420] 2018-01-27 16:15:28,050 - utf-8  confidence = 0.99
+[DEBUG] [35420] 2018-01-27 16:15:28,050 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,050 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,050 - GB2312 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,050 - EUC-KR Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,050 - CP949 Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - Big5 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - windows-1251 Russian confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - KOI8-R Russian confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - ISO-8859-5 Russian confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - MacCyrillic not active
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - IBM866 Russian confidence = 0.06191345903914682
+[DEBUG] [35420] 2018-01-27 16:15:28,051 - IBM855 Russian confidence = 0.07469278386886713
+[DEBUG] [35420] 2018-01-27 16:15:28,052 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:28,052 - windows-1253 Greek confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:28,052 - ISO-8859-5 not active
+[DEBUG] [35420] 2018-01-27 16:15:28,052 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:28,052 - TIS-620 Thai confidence = 0.02400604183441233
+[DEBUG] [35420] 2018-01-27 16:15:28,052 - ISO-8859-9 Turkish confidence = 0.4352347215095164
+[DEBUG] [35420] 2018-01-27 16:15:28,052 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:28,053 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:28,053 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [35420] 2018-01-27 16:15:28,053 - utf-8  confidence = 0.99
+[DEBUG] [35420] 2018-01-27 16:15:28,053 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,053 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,053 - GB2312 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,053 - EUC-KR Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,054 - CP949 Korean confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,054 - Big5 Chinese confidence = 0.01
+[DEBUG] [35420] 2018-01-27 16:15:28,054 - EUC-TW Taiwan confidence = 0.01
+[ERROR] [35420] 2018-01-27 16:15:28,054 - Expecting value: line 1 column 1 (char 0)
+Traceback (most recent call last):
+  File "D:/notes/mini_spider\spiders\cfc_spider.py", line 55, in parse_detail
+    datas = json.loads(response.body)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python36\Lib\json\__init__.py", line 354, in loads
+    return _default_decoder.decode(s)
+  File "C:\Users\user\AppData\Local\Programs\Python\Python36\Lib\json\decoder.py", line 339, in decode
+    obj, end = self.raw_decode(s, idx=_w(s, 0).end())
+  File "C:\Users\user\AppData\Local\Programs\Python\Python36\Lib\json\decoder.py", line 357, in raw_decode
+    raise JSONDecodeError("Expecting value", s, err.value) from None
+json.decoder.JSONDecodeError: Expecting value: line 1 column 1 (char 0)
+[WARNING] [35420] 2018-01-27 16:15:28,659 - time.sleep(1)
+[WARNING] [35420] 2018-01-27 16:15:29,687 - time.sleep(1)
+[WARNING] [35420] 2018-01-27 16:15:30,715 - time.sleep(1)
+[WARNING] [35420] 2018-01-27 16:15:31,744 - time.sleep(1)
+[INFO] [34504] 2018-01-27 16:15:39,019 - ---------------> CFCSpider: start <---------------
+[INFO] [34504] 2018-01-27 16:15:39,020 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [34504] 2018-01-27 16:15:39,047 - Using selector: SelectSelector
+[WARNING] [34504] 2018-01-27 16:15:39,102 - time.sleep(1)
+[WARNING] [34504] 2018-01-27 16:15:40,129 - time.sleep(1)
+[DEBUG] [34504] 2018-01-27 16:15:40,760 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:40,783 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:40,832 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:40,889 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:41,074 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:41,094 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:41,192 - utf-8  confidence = 0.99
+[DEBUG] [34504] 2018-01-27 16:15:41,192 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,192 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,192 - GB2312 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,192 - EUC-KR Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,192 - CP949 Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,193 - Big5 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,193 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,193 - windows-1251 Russian confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,193 - KOI8-R Russian confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,193 - ISO-8859-5 not active
+[DEBUG] [34504] 2018-01-27 16:15:41,193 - MacCyrillic not active
+[DEBUG] [34504] 2018-01-27 16:15:41,193 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [34504] 2018-01-27 16:15:41,194 - IBM855 not active
+[DEBUG] [34504] 2018-01-27 16:15:41,194 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:41,194 - windows-1253 Greek confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:41,194 - ISO-8859-5 not active
+[DEBUG] [34504] 2018-01-27 16:15:41,194 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:41,195 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [34504] 2018-01-27 16:15:41,195 - ISO-8859-9 Turkish confidence = 0.413790912497208
+[DEBUG] [34504] 2018-01-27 16:15:41,195 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:41,196 - windows-1255 not active
+[DEBUG] [34504] 2018-01-27 16:15:41,196 - windows-1255 not active
+[DEBUG] [34504] 2018-01-27 16:15:41,196 - utf-8  confidence = 0.99
+[DEBUG] [34504] 2018-01-27 16:15:41,196 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,196 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,196 - GB2312 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,197 - EUC-KR Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,197 - CP949 Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,197 - Big5 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:41,197 - EUC-TW Taiwan confidence = 0.01
+[WARNING] [34504] 2018-01-27 16:15:41,279 - time.sleep(1)
+[WARNING] [34504] 2018-01-27 16:15:42,307 - time.sleep(1)
+[DEBUG] [34504] 2018-01-27 16:15:42,573 - MacCyrillic confidence = 0.034145904162378275, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:42,607 - ISO-8859-5 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [34504] 2018-01-27 16:15:42,683 - utf-8  confidence = 0.99
+[DEBUG] [34504] 2018-01-27 16:15:42,683 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,683 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,683 - GB2312 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,683 - EUC-KR Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,683 - CP949 Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,683 - Big5 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,684 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,684 - windows-1251 Russian confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,684 - KOI8-R Russian confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,684 - ISO-8859-5 Russian confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:42,684 - MacCyrillic not active
+[DEBUG] [34504] 2018-01-27 16:15:42,684 - IBM866 Russian confidence = 0.06191345903914682
+[DEBUG] [34504] 2018-01-27 16:15:42,684 - IBM855 Russian confidence = 0.07469278386886713
+[DEBUG] [34504] 2018-01-27 16:15:42,685 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:42,685 - windows-1253 Greek confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:42,685 - ISO-8859-5 not active
+[DEBUG] [34504] 2018-01-27 16:15:42,685 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:42,685 - TIS-620 Thai confidence = 0.02400604183441233
+[DEBUG] [34504] 2018-01-27 16:15:42,686 - ISO-8859-9 Turkish confidence = 0.4352347215095164
+[DEBUG] [34504] 2018-01-27 16:15:42,686 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:42,686 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:42,686 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [34504] 2018-01-27 16:15:42,686 - utf-8  confidence = 0.99
+[DEBUG] [34504] 2018-01-27 16:15:42,687 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,687 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,687 - GB2312 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,687 - EUC-KR Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,687 - CP949 Korean confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,687 - Big5 Chinese confidence = 0.01
+[DEBUG] [34504] 2018-01-27 16:15:42,687 - EUC-TW Taiwan confidence = 0.01
+[INFO] [32664] 2018-01-27 16:18:22,829 - ---------------> CFCSpider: start <---------------
+[INFO] [32664] 2018-01-27 16:18:22,830 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [32664] 2018-01-27 16:18:22,853 - Using selector: SelectSelector
+[WARNING] [32664] 2018-01-27 16:18:22,902 - time.sleep(1)
+[WARNING] [32664] 2018-01-27 16:18:23,925 - time.sleep(1)
+[DEBUG] [32664] 2018-01-27 16:18:24,441 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:24,465 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:24,514 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:24,573 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:24,764 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:24,784 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:24,881 - utf-8  confidence = 0.99
+[DEBUG] [32664] 2018-01-27 16:18:24,882 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,882 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,882 - GB2312 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,883 - EUC-KR Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,883 - CP949 Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,883 - Big5 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,883 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,883 - windows-1251 Russian confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - KOI8-R Russian confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - ISO-8859-5 not active
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - MacCyrillic not active
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - IBM855 not active
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - windows-1253 Greek confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:24,884 - ISO-8859-5 not active
+[DEBUG] [32664] 2018-01-27 16:18:24,885 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:24,885 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [32664] 2018-01-27 16:18:24,885 - ISO-8859-9 Turkish confidence = 0.413790912497208
+[DEBUG] [32664] 2018-01-27 16:18:24,885 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:24,885 - windows-1255 not active
+[DEBUG] [32664] 2018-01-27 16:18:24,885 - windows-1255 not active
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - utf-8  confidence = 0.99
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - GB2312 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - EUC-KR Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - CP949 Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - Big5 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:24,886 - EUC-TW Taiwan confidence = 0.01
+[WARNING] [32664] 2018-01-27 16:18:24,959 - time.sleep(1)
+[WARNING] [32664] 2018-01-27 16:18:25,983 - time.sleep(1)
+[DEBUG] [32664] 2018-01-27 16:18:26,254 - MacCyrillic confidence = 0.034145904162378275, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:26,291 - ISO-8859-5 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [32664] 2018-01-27 16:18:26,371 - utf-8  confidence = 0.99
+[DEBUG] [32664] 2018-01-27 16:18:26,372 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,372 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,372 - GB2312 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,372 - EUC-KR Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,372 - CP949 Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,372 - Big5 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,372 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - windows-1251 Russian confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - KOI8-R Russian confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - ISO-8859-5 Russian confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - MacCyrillic not active
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - IBM866 Russian confidence = 0.06191345903914682
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - IBM855 Russian confidence = 0.07469278386886713
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:26,373 - windows-1253 Greek confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:26,374 - ISO-8859-5 not active
+[DEBUG] [32664] 2018-01-27 16:18:26,374 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:26,374 - TIS-620 Thai confidence = 0.02400604183441233
+[DEBUG] [32664] 2018-01-27 16:18:26,374 - ISO-8859-9 Turkish confidence = 0.4352347215095164
+[DEBUG] [32664] 2018-01-27 16:18:26,374 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:26,374 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:26,374 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [32664] 2018-01-27 16:18:26,375 - utf-8  confidence = 0.99
+[DEBUG] [32664] 2018-01-27 16:18:26,375 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,375 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,375 - GB2312 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,375 - EUC-KR Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,376 - CP949 Korean confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,376 - Big5 Chinese confidence = 0.01
+[DEBUG] [32664] 2018-01-27 16:18:26,376 - EUC-TW Taiwan confidence = 0.01
+[WARNING] [32664] 2018-01-27 16:18:26,994 - time.sleep(1)
+[WARNING] [32664] 2018-01-27 16:18:28,018 - time.sleep(1)
+[WARNING] [32664] 2018-01-27 16:18:29,041 - time.sleep(1)
+[WARNING] [32664] 2018-01-27 16:18:30,065 - time.sleep(1)
+[WARNING] [32664] 2018-01-27 16:18:31,089 - time.sleep(1)
+[WARNING] [32664] 2018-01-27 16:18:32,113 - time.sleep(1)
+[INFO] [23156] 2018-01-27 19:41:21,677 - ---------------> CFCSpider: start <---------------
+[INFO] [23156] 2018-01-27 19:41:21,678 - ---------------> start_urls=['http://blog.jobbole.com/all-posts/'] <---------------
+[DEBUG] [23156] 2018-01-27 19:41:21,708 - Using selector: SelectSelector
+[WARNING] [23156] 2018-01-27 19:41:21,769 - time.sleep(1)
+[WARNING] [23156] 2018-01-27 19:41:22,800 - time.sleep(1)
+[DEBUG] [23156] 2018-01-27 19:41:23,430 - ISO-8859-5 confidence = 0.00023637224414486475, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:23,453 - MacCyrillic confidence = 0.020242074432795364, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:23,502 - IBM855 confidence = 0.047378654163679215, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:23,560 - ISO-8859-5 confidence = 0.00046188525192572154, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:23,743 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:23,763 - windows-1255 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:23,856 - utf-8  confidence = 0.99
+[DEBUG] [23156] 2018-01-27 19:41:23,857 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,857 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,857 - GB2312 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,857 - EUC-KR Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,857 - CP949 Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,857 - Big5 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,857 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,858 - windows-1251 Russian confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,858 - KOI8-R Russian confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,858 - ISO-8859-5 not active
+[DEBUG] [23156] 2018-01-27 19:41:23,858 - MacCyrillic not active
+[DEBUG] [23156] 2018-01-27 19:41:23,858 - IBM866 Russian confidence = 0.07596790810855068
+[DEBUG] [23156] 2018-01-27 19:41:23,858 - IBM855 not active
+[DEBUG] [23156] 2018-01-27 19:41:23,858 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:23,859 - windows-1253 Greek confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:23,859 - ISO-8859-5 not active
+[DEBUG] [23156] 2018-01-27 19:41:23,859 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:23,859 - TIS-620 Thai confidence = 0.07528966746723087
+[DEBUG] [23156] 2018-01-27 19:41:23,859 - ISO-8859-9 Turkish confidence = 0.41380510551827265
+[DEBUG] [23156] 2018-01-27 19:41:23,859 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - windows-1255 not active
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - windows-1255 not active
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - utf-8  confidence = 0.99
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - GB2312 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - EUC-KR Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,860 - CP949 Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,861 - Big5 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:23,861 - EUC-TW Taiwan confidence = 0.01
+[WARNING] [23156] 2018-01-27 19:41:23,950 - time.sleep(1)
+[WARNING] [23156] 2018-01-27 19:41:24,981 - time.sleep(1)
+[DEBUG] [23156] 2018-01-27 19:41:25,254 - MacCyrillic confidence = 0.034145904162378275, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:25,287 - ISO-8859-5 confidence = 0.0, below negative shortcut threshhold 0.05
+[DEBUG] [23156] 2018-01-27 19:41:25,362 - utf-8  confidence = 0.99
+[DEBUG] [23156] 2018-01-27 19:41:25,363 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,363 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,363 - GB2312 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,363 - EUC-KR Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,363 - CP949 Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,363 - Big5 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,364 - EUC-TW Taiwan confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,364 - windows-1251 Russian confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,364 - KOI8-R Russian confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,364 - ISO-8859-5 Russian confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:25,364 - MacCyrillic not active
+[DEBUG] [23156] 2018-01-27 19:41:25,364 - IBM866 Russian confidence = 0.06191345903914682
+[DEBUG] [23156] 2018-01-27 19:41:25,364 - IBM855 Russian confidence = 0.07469278386886713
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - ISO-8859-7 Greek confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - windows-1253 Greek confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - ISO-8859-5 not active
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - windows-1251 Bulgarian confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - TIS-620 Thai confidence = 0.02400604183441233
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - ISO-8859-9 Turkish confidence = 0.4352347215095164
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:25,365 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:25,366 - windows-1255 Hebrew confidence = 0.0
+[DEBUG] [23156] 2018-01-27 19:41:25,366 - utf-8  confidence = 0.99
+[DEBUG] [23156] 2018-01-27 19:41:25,366 - SHIFT_JIS Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,366 - EUC-JP Japanese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,366 - GB2312 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,366 - EUC-KR Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,367 - CP949 Korean confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,367 - Big5 Chinese confidence = 0.01
+[DEBUG] [23156] 2018-01-27 19:41:25,367 - EUC-TW Taiwan confidence = 0.01
+[WARNING] [23156] 2018-01-27 19:41:26,007 - time.sleep(1)
+[WARNING] [23156] 2018-01-27 19:41:27,037 - time.sleep(1)
+[WARNING] [23156] 2018-01-27 19:41:28,067 - time.sleep(1)
+[WARNING] [23156] 2018-01-27 19:41:29,096 - time.sleep(1)
