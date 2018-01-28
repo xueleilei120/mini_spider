@@ -1,6 +1,6 @@
 mini_spider = asyncio + 分布式
 ===========================
-基于asyncio实现迷你scrapy的分布式爬虫
+基于 asyncio 实现迷你 scrapy 分布式爬虫: 欢迎Star，千万别滥用公共配置，谢谢。
 ****
 ### QQ:290484002
 ### [我的博客](http://blog.csdn.net/shaququ/article/category/7042918)
