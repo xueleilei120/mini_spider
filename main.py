@@ -1,5 +1,5 @@
 # _*_ coding: utf-8 _*_
-# author : "liuyc"
+# author : "666"
 # date : 2018/1/12 10:02
 # desc : "程序入口"
 from spiders.jobbole_spider import JobboleSpider

@@ -1,7 +1,7 @@
 #!/usr/bin/env python
 # -*- coding: utf-8 -*-
 """
-@author: liuyc
+@author: 666
 @file: redisclient.py
 @time: 2017/11/3 22:55
 @describe:

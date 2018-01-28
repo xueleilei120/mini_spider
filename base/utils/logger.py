@@ -1,5 +1,5 @@
 # _*_ coding: utf-8 _*_
-# author : "liuyc"
+# author : "666"
 # date : 2017/12/22 15:11
 # desc : "日志打印初始化模块, 在"
 import logging

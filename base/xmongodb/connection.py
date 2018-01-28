@@ -1,5 +1,5 @@
 # _*_ coding: utf-8 _*_
-# author : "liuyc"
+# author : "666"
 # date : 2018/1/24 18:52
 # desc : "描述"
 import pymongo
