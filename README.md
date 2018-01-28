@@ -12,7 +12,7 @@
 - [x] 检测运行时间 中间件
 - [x] redis 队列、查重
 - [x] mongodb存储
-- []  监控
+- [未完成]  监控
 ## Requirements
 * Python3.5+
 * aiohttp (2.3.9)
