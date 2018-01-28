@@ -1,7 +1,6 @@
 # _*_ coding: utf-8 _*_
 
 import logging
-from parsel import Selector
 
 from base.https.request import Request
 from base.core.spider import Spider
@@ -19,12 +18,11 @@ class JobboleSpider(Spider):
         self.mongodb_client = MongodbClientX(self.settings, collection_name="jobbole")
 
     def parse(self, response):
-        select = Selector(response.body)
-        next_url = select.xpath("//a[@class='next page-numbers']/@href").extract_first()
+        next_url = response.xpath("//a[@class='next page-numbers']/@href").extract_first()
         if next_url:
             logging.info("next page url:%s" % next_url)
             yield Request(next_url, callback=self.parse, dont_filter=True)
-        urls = select.xpath("//a[@class='archive-title']/@href").extract()
+        urls = response.xpath("//a[@class='archive-title']/@href").extract()
         for url in urls:
             yield Request(url.strip(), callback=self.parse_detail)
 
@@ -32,8 +30,7 @@ class JobboleSpider(Spider):
         item = None
         try:
             logging.debug(response.url)
-            select = Selector(response.body)
-            title = select.xpath("//div[@class='entry-header']/h1/text()").extract_first()
+            title = response.xpath("//div[@class='entry-header']/h1/text()").extract_first()
             if title:
                 item = {"title": title, "url": response.url}
         except Exception as _e:

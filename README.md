@@ -6,7 +6,7 @@ mini_spider = asyncio + 分布式
 * 重试次数中间件
 * 运行时间检测中间件
 ****
-### QQ:290484002
+### QQ: 290484002 欢迎交流。
 ### [我的博客](http://blog.csdn.net/shaququ/article/category/7042918)
 ****
 ## Requirements

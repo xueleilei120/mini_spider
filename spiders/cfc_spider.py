@@ -1,7 +1,6 @@
 # _*_ coding: utf-8 _*_
 
 import logging
-from parsel import Selector
 
 from base.https.form import FormRequest
 from base.core.spider import Spider
