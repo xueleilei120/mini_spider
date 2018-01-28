@@ -1,10 +1,12 @@
-mini_spider = asyncio + 分布式
+分布式mini_spider = asyncio + redis + mongodb
 ===========================
-基于 asyncio 实现迷你 scrapy 分布式爬虫: 欢迎Star，千万别滥用公共配置，谢谢。
+基于 asyncio 实现迷你 scrapy 分布式爬虫: 欢迎Star，谢谢。
 * 随机代理 中间件
 * 随机用户代理 中间件
 * 重试次数 中间件
 * 检测运行时间 中间件
+* redis 队列、查重
+* mongodb存储
 ****
 ### QQ: 290484002 欢迎交流。
 ### [我的博客](http://blog.csdn.net/shaququ/article/category/7042918)
