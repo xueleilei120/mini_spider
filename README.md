@@ -12,6 +12,7 @@
 ### [我的博客](http://blog.csdn.net/shaququ/article/category/7042918)
 ****
 ## Requirements
+* Python3.5+
 * aiohttp (2.3.9)
 * lxml (4.1.1)
 * parsel (1.3.1)
